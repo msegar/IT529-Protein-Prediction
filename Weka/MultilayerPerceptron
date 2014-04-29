@@ -1,0 +1,1466 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     protein_metrics_trimmed
+Instances:    3039
+Attributes:   31
+              function
+              length
+              mol weight
+              theortical pI
+              percent A
+              percent R
+              percent N
+              percent D
+              percent C
+              percent Q
+              percent E
+              percent G
+              percent H
+              percent I
+              percent L
+              percent K
+              percent M
+              percent F
+              percent P
+              percent S
+              percent T
+              percent W
+              percent Y
+              percent V
+              percent residue 1
+              percent residue 2
+              number atoms
+              number carbon
+              number nitrogen
+              number oxygen
+              number sulphur
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -7.81768768796284
+    Node 19    -2.997481104526377
+    Node 20    -2.358242186856499
+    Node 21    -0.9772612671070922
+    Node 22    -1.295117850920686
+    Node 23    4.676008494282572
+    Node 24    -5.260554874373755
+    Node 25    -1.1629646055217857
+    Node 26    -1.0739337599992922
+    Node 27    -2.375821252410392
+    Node 28    -3.1473301710569
+    Node 29    5.08586033066429
+    Node 30    -3.169090041324631
+    Node 31    2.6973013623596542
+    Node 32    -3.000243274551989
+    Node 33    4.472224474657526
+    Node 34    1.1199786052182015
+    Node 35    -0.5222142882041042
+    Node 36    -2.1444860146998583
+    Node 37    -3.205611349333337
+    Node 38    -0.27283150656079325
+    Node 39    2.6890976271541316
+    Node 40    0.6997982935112285
+    Node 41    -2.0239905997397165
+    Node 42    -3.3202634407814022
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -11.373914234961
+    Node 19    -2.7328702952720283
+    Node 20    -2.168098407592532
+    Node 21    2.776057466573365
+    Node 22    7.688324606432553
+    Node 23    -3.3272697429489932
+    Node 24    -5.242361945508663
+    Node 25    -6.944596920010366
+    Node 26    3.646362624925771
+    Node 27    1.9204247382060753
+    Node 28    8.36569779755371
+    Node 29    -1.2645093080380945
+    Node 30    -2.679722134837258
+    Node 31    -1.7071427683671692
+    Node 32    -2.9292366071596985
+    Node 33    3.6170361523532795
+    Node 34    -2.698400948753036
+    Node 35    -1.9389141574350268
+    Node 36    -3.61642805512036
+    Node 37    -0.34387842662181506
+    Node 38    1.524297582523594
+    Node 39    -2.524063873980929
+    Node 40    -5.068520075562086
+    Node 41    2.1151763423033234
+    Node 42    -3.9113152727424785
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -5.646892732447111
+    Node 19    1.1160753680047037
+    Node 20    6.066586757816361
+    Node 21    -1.541409867142901
+    Node 22    -7.089983666029957
+    Node 23    1.1869553440191745
+    Node 24    -3.32237149744555
+    Node 25    -5.767641780445866
+    Node 26    -0.3371799295853374
+    Node 27    -5.864937996215669
+    Node 28    0.5870215043272661
+    Node 29    3.998599448581599
+    Node 30    2.9918499350652707
+    Node 31    3.005919235670401
+    Node 32    5.408525340227183
+    Node 33    -3.760504122678345
+    Node 34    4.6178849403942195
+    Node 35    -0.22935073418863794
+    Node 36    -11.80485684948085
+    Node 37    -10.463287656987122
+    Node 38    2.9099827719422717
+    Node 39    1.395596049697257
+    Node 40    -0.4381847703862844
+    Node 41    -1.6811689599141173
+    Node 42    -0.701742080413711
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -8.396621804702876
+    Node 19    -1.413972881371878
+    Node 20    0.22137889836334923
+    Node 21    -0.9186159103070067
+    Node 22    -2.065001381056507
+    Node 23    -3.4212822731753945
+    Node 24    -2.8822866460153573
+    Node 25    -0.9659344969173369
+    Node 26    2.4980888857765216
+    Node 27    -3.15058989552955
+    Node 28    -8.528729290876798
+    Node 29    -5.409459559719185
+    Node 30    0.8929725061938699
+    Node 31    -2.103329540889533
+    Node 32    -3.134804106119358
+    Node 33    2.5203413107222725
+    Node 34    -5.526619757633385
+    Node 35    -7.298191158311037
+    Node 36    -0.5060294901509648
+    Node 37    0.3731972816062112
+    Node 38    6.852564520232683
+    Node 39    -2.1066193626158776
+    Node 40    -10.254436060626558
+    Node 41    3.5371818336810157
+    Node 42    5.690876095137977
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -10.392902691305144
+    Node 19    2.631072333163332
+    Node 20    -3.526711442762972
+    Node 21    -0.16056663042772523
+    Node 22    1.4253682972663053
+    Node 23    4.448112657939383
+    Node 24    -4.887084881481529
+    Node 25    -2.8258997706695292
+    Node 26    0.051979720391488536
+    Node 27    -2.5898858781010703
+    Node 28    -4.8181139869108
+    Node 29    0.2716162930519501
+    Node 30    1.7425851068352358
+    Node 31    2.450110360440896
+    Node 32    -2.7537284108871627
+    Node 33    -2.2061388666005186
+    Node 34    -0.5912599869145109
+    Node 35    2.1600937951072163
+    Node 36    2.0224690245849097
+    Node 37    -1.9514700608805873
+    Node 38    0.2699228621374267
+    Node 39    -2.168801477918715
+    Node 40    -9.073519515511707
+    Node 41    1.4797683708301193
+    Node 42    -1.4701645465688524
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -6.374217060349015
+    Node 19    1.1145588253057184
+    Node 20    0.11421132046328825
+    Node 21    -3.838959200710481
+    Node 22    2.494450882153031
+    Node 23    -7.456484470180747
+    Node 24    -1.8573075042090554
+    Node 25    -1.168703288784611
+    Node 26    -1.3065474505388612
+    Node 27    -2.2054306527791323
+    Node 28    -3.105506438910712
+    Node 29    -1.7140174450027088
+    Node 30    3.0267559886038105
+    Node 31    5.152037733497838
+    Node 32    -1.7298598947428279
+    Node 33    -1.7378872060372743
+    Node 34    -1.1598974628338115
+    Node 35    1.5740018092458263
+    Node 36    -2.0831876992554883
+    Node 37    -5.662457752426819
+    Node 38    -0.2892567569789934
+    Node 39    -5.530573621543308
+    Node 40    -0.8591091342058262
+    Node 41    -3.967319268055599
+    Node 42    -4.536447576232472
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -6.072401579550104
+    Node 19    0.2459487920469604
+    Node 20    -4.437377465665898
+    Node 21    -4.2538286393664455
+    Node 22    -1.8550292523232936
+    Node 23    2.3439327388980833
+    Node 24    -2.9315220777470787
+    Node 25    1.3094848264471208
+    Node 26    -0.24091231872244398
+    Node 27    0.8397164571981854
+    Node 28    1.9393833377246974
+    Node 29    2.7516360892344403
+    Node 30    1.2571645087445225
+    Node 31    1.3205163325898668
+    Node 32    1.997624455957544
+    Node 33    -0.790834871078693
+    Node 34    0.06832557546036468
+    Node 35    0.8633895238136712
+    Node 36    -0.029077312431894594
+    Node 37    1.2239626771663201
+    Node 38    -3.5786707395473916
+    Node 39    -1.6878930981377773
+    Node 40    -3.2968991594422628
+    Node 41    -1.7733700296446424
+    Node 42    0.21987603528300786
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.3571934705174729
+    Node 19    -0.017733081877043377
+    Node 20    1.43748577164813
+    Node 21    7.901578028404699
+    Node 22    -4.173472239995841
+    Node 23    -3.7086124710886543
+    Node 24    -5.696267420562082
+    Node 25    1.1669952015175538
+    Node 26    -2.123824606585
+    Node 27    -6.408982514366871
+    Node 28    -3.8479593921793174
+    Node 29    -1.5560974028918029
+    Node 30    -1.1674701969018113
+    Node 31    0.8386456802693704
+    Node 32    -6.461395308027468
+    Node 33    0.37509018255645926
+    Node 34    1.0661270219418222
+    Node 35    2.6288547765005283
+    Node 36    1.5953374406401155
+    Node 37    0.0875705128570376
+    Node 38    -2.197690818435263
+    Node 39    4.025942363895895
+    Node 40    -2.304339842884591
+    Node 41    -5.125987071369233
+    Node 42    0.9818020866814773
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.958540022913751
+    Node 19    -6.47401017569108
+    Node 20    5.3434030476020355
+    Node 21    -1.1893305318105996
+    Node 22    -3.9202012074897183
+    Node 23    1.8119068099146052
+    Node 24    -0.09521491181365539
+    Node 25    -0.46927233035746196
+    Node 26    -2.1695277597638163
+    Node 27    -1.392018502187481
+    Node 28    -1.398844013491949
+    Node 29    5.92486841141743
+    Node 30    -4.0784357601472125
+    Node 31    -1.0537573334532926
+    Node 32    -4.144819703058309
+    Node 33    -1.8477226825450068
+    Node 34    0.9825644825978184
+    Node 35    3.1388189705043166
+    Node 36    0.01842075498004956
+    Node 37    -6.4431333263243
+    Node 38    -2.557546344641744
+    Node 39    -2.4167982132103276
+    Node 40    -5.473404648572919
+    Node 41    -0.37282173539314695
+    Node 42    0.2692351172179356
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -9.836456219100924
+    Node 19    -8.991142808904714
+    Node 20    -6.244420966421899
+    Node 21    -1.3025835474801382
+    Node 22    -11.366628549717584
+    Node 23    6.6075227360883515
+    Node 24    -2.44623702572273
+    Node 25    0.7733109562322931
+    Node 26    -0.4056921341886613
+    Node 27    -4.379270126113637
+    Node 28    -4.3207542324900015
+    Node 29    -5.2544151166713435
+    Node 30    -10.181872057546398
+    Node 31    -2.707246485516131
+    Node 32    10.548059406582038
+    Node 33    6.933668501264799
+    Node 34    4.050513175811989
+    Node 35    -2.6303445000648726
+    Node 36    1.0629172148603137
+    Node 37    9.102140549668846
+    Node 38    0.19468781693104847
+    Node 39    -7.048145826064944
+    Node 40    -10.342161790988097
+    Node 41    7.320392702245136
+    Node 42    -7.337807199785684
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -12.143609714548589
+    Node 19    3.7529321131658055
+    Node 20    -4.227272890053614
+    Node 21    2.099660619923239
+    Node 22    -4.3455977276706905
+    Node 23    5.402649224320523
+    Node 24    -1.3741079042844335
+    Node 25    -2.9669162644082485
+    Node 26    -4.001817954003775
+    Node 27    4.17499149269948
+    Node 28    7.350510610682141
+    Node 29    -4.252236765853034
+    Node 30    4.366239072328931
+    Node 31    2.617583776693226
+    Node 32    -6.4451127882696815
+    Node 33    1.3334120823780824
+    Node 34    0.8427183825047756
+    Node 35    -5.249381664339072
+    Node 36    6.180689909630563
+    Node 37    0.8479300329440814
+    Node 38    -8.260923114334592
+    Node 39    3.0322966607588318
+    Node 40    -9.341122591677829
+    Node 41    -11.77538234088522
+    Node 42    3.5208189928602356
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -8.060167196356266
+    Node 19    -2.530547755197223
+    Node 20    1.9400992687098801
+    Node 21    0.9078443059819742
+    Node 22    -3.4379576842962165
+    Node 23    -5.335371742297354
+    Node 24    3.2893579519559526
+    Node 25    -1.7349579660412455
+    Node 26    -5.397990697238085
+    Node 27    0.21842243969836023
+    Node 28    0.5430442903141436
+    Node 29    -0.8765032761397953
+    Node 30    1.0379163623218286
+    Node 31    -0.36402506473435936
+    Node 32    4.4938515166781
+    Node 33    -2.4324545334711556
+    Node 34    2.073903515292717
+    Node 35    2.0539357983471955
+    Node 36    2.5750701476722697
+    Node 37    2.914190003705723
+    Node 38    -0.8423173115038096
+    Node 39    -5.233735965959048
+    Node 40    2.093495086531551
+    Node 41    3.702744226295276
+    Node 42    -0.36967862636149756
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -2.571613204240606
+    Node 19    -1.1506484252477942
+    Node 20    -5.135650032470889
+    Node 21    -5.963362163032831
+    Node 22    -1.69852626081486
+    Node 23    -2.5168087688022607
+    Node 24    -5.069499918828685
+    Node 25    0.5033426851398607
+    Node 26    -9.314494386043524
+    Node 27    -1.049218352752349
+    Node 28    3.9916952768450997
+    Node 29    2.2405815436254293
+    Node 30    -0.7211769707665133
+    Node 31    -2.1638901484250583
+    Node 32    -0.535398617036802
+    Node 33    -4.563530645073248
+    Node 34    -7.063288991901801
+    Node 35    2.6774360888899817
+    Node 36    -0.07816838158123067
+    Node 37    -3.203625460187523
+    Node 38    2.848828043415133
+    Node 39    -6.762424432819049
+    Node 40    1.9833889873911588
+    Node 41    0.2549227503936263
+    Node 42    1.6762573041942823
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -9.171466841208282
+    Node 19    4.619970492810748
+    Node 20    -0.7847428934608216
+    Node 21    -1.2861469587334418
+    Node 22    -2.2162871013650993
+    Node 23    -4.419524480480812
+    Node 24    -0.6700004295110031
+    Node 25    -0.26582670904915595
+    Node 26    -1.530019302925666
+    Node 27    -0.7486693050684128
+    Node 28    -1.3697336864487741
+    Node 29    0.557825023807765
+    Node 30    2.60868939704723
+    Node 31    -1.332409557963416
+    Node 32    -1.0090888588966025
+    Node 33    1.9472300714775768
+    Node 34    4.060150476699741
+    Node 35    1.327405862369093
+    Node 36    -3.9678175159009257
+    Node 37    0.40194791694081766
+    Node 38    -3.566703414841687
+    Node 39    0.07371264472728935
+    Node 40    -1.0360854431740385
+    Node 41    0.9470561810124231
+    Node 42    -1.193958375516396
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.30130252579040184
+    Node 19    3.347789081972893
+    Node 20    -14.673610489763732
+    Node 21    2.958377816795512
+    Node 22    0.20750552094697108
+    Node 23    2.3640965138214303
+    Node 24    2.1808519003081095
+    Node 25    -8.655134856055243
+    Node 26    -0.3131149555740553
+    Node 27    -2.3533172098925688
+    Node 28    4.313368205169786
+    Node 29    -4.293946649450302
+    Node 30    -5.664506423280394
+    Node 31    -6.874797132481797
+    Node 32    -6.338832592317475
+    Node 33    -7.6883689708498135
+    Node 34    -5.052785644823699
+    Node 35    -6.650167578973725
+    Node 36    -2.964210011683217
+    Node 37    -0.9844875089906148
+    Node 38    -8.032621138498957
+    Node 39    7.15634845520325
+    Node 40    -1.650778027111907
+    Node 41    2.8914640310213806
+    Node 42    0.2940114108562825
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -8.766886525068582
+    Node 19    -2.326165188180585
+    Node 20    -1.4977647222225412
+    Node 21    2.2564702513642216
+    Node 22    -9.46388417478132
+    Node 23    2.0534741265807925
+    Node 24    0.2179437567652436
+    Node 25    3.5827074464474764
+    Node 26    -0.3108493175866301
+    Node 27    -3.8420413760702323
+    Node 28    -7.9350918489265005
+    Node 29    -1.2260140981702226
+    Node 30    -2.9058762282578585
+    Node 31    -0.3437464802505705
+    Node 32    9.331346464168652
+    Node 33    -1.0666050059232703
+    Node 34    -0.03638092153911832
+    Node 35    0.6986378799101579
+    Node 36    1.798647829508568
+    Node 37    1.7083973764695053
+    Node 38    -9.226428369654506
+    Node 39    -0.9627988707973738
+    Node 40    7.854140197873013
+    Node 41    -9.86990132334344
+    Node 42    1.3139994806881075
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -1.9562246192936645
+    Node 19    -4.211397122211161
+    Node 20    -5.416538687238114
+    Node 21    2.8756718775631755
+    Node 22    -12.548616592482905
+    Node 23    -0.4370004605000703
+    Node 24    -7.163806234302009
+    Node 25    -2.001511719313307
+    Node 26    -10.004023181060687
+    Node 27    10.46787432621302
+    Node 28    -9.221466619927932
+    Node 29    -2.322716998540975
+    Node 30    -4.006093272818058
+    Node 31    2.3643086190888325
+    Node 32    -12.058324137256951
+    Node 33    -2.1048448959313992
+    Node 34    5.306836127447691
+    Node 35    0.10873363741788815
+    Node 36    2.117798766506474
+    Node 37    -0.7215684824445241
+    Node 38    -0.8879983732476128
+    Node 39    -3.8559945260622386
+    Node 40    -2.0159234769122176
+    Node 41    -5.007264993860126
+    Node 42    -12.270419876150598
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -12.000926606760174
+    Node 19    -3.4819037317703554
+    Node 20    -1.7262712686521362
+    Node 21    -14.992589877663766
+    Node 22    7.533528546108834
+    Node 23    0.1067897381747851
+    Node 24    4.728085210836834
+    Node 25    13.017871048432477
+    Node 26    0.9993076065884984
+    Node 27    5.593012400630837
+    Node 28    -9.077958752687609
+    Node 29    -2.1063121395874513
+    Node 30    5.3084806018811035
+    Node 31    -0.48942169147117953
+    Node 32    -8.801281622213164
+    Node 33    8.39719602571871
+    Node 34    2.7093817573569092
+    Node 35    1.4917201294609903
+    Node 36    -1.051025812610687
+    Node 37    -1.5810763042538443
+    Node 38    -3.6019568262335984
+    Node 39    -0.4376664775894126
+    Node 40    1.174940680224546
+    Node 41    -5.9653544641014395
+    Node 42    -6.15529102235352
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -14.75701883510002
+    Node 19    1.4407129665139102
+    Node 20    -1.193632023185872
+    Node 21    -6.768127184620275
+    Node 22    -6.979633201466828
+    Node 23    -4.207240423430552
+    Node 24    -0.4092255582136046
+    Node 25    -10.69891873962955
+    Node 26    3.3602603573707386
+    Node 27    10.964611468525877
+    Node 28    -4.427827953558775
+    Node 29    0.023930621935075433
+    Node 30    -8.930069386720161
+    Node 31    1.3655689846497567
+    Node 32    6.116146413395303
+    Node 33    -7.685227020489832
+    Node 34    -3.4768132039605684
+    Node 35    -8.39126411343693
+    Node 36    -3.01857103019483
+    Node 37    -2.044506755359857
+    Node 38    -8.809989024373605
+    Node 39    -1.4743882575897083
+    Node 40    1.3531586654137655
+    Node 41    1.3884072086350132
+    Node 42    6.241759284253573
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -5.73719572842824
+    Attrib length    -3.537135802684757
+    Attrib mol weight    -3.7863096570797823
+    Attrib theortical pI    -0.9375868394549884
+    Attrib percent A    8.713616076395002
+    Attrib percent R    -9.42263475995787
+    Attrib percent N    -2.5036956470815217
+    Attrib percent D    2.2591733705563923
+    Attrib percent C    -2.734308142638044
+    Attrib percent Q    -3.5617293632956724
+    Attrib percent E    3.0157164212674554
+    Attrib percent G    13.591662837296324
+    Attrib percent H    2.9711847760342267
+    Attrib percent I    1.146216028742545
+    Attrib percent L    6.7851361741902245
+    Attrib percent K    17.14944088637243
+    Attrib percent M    3.1284978324325965
+    Attrib percent F    -0.6876403273762736
+    Attrib percent P    2.6177118298260718
+    Attrib percent S    -4.565850454870112
+    Attrib percent T    -2.370193700287998
+    Attrib percent W    -4.094207298553985
+    Attrib percent Y    0.5917600223797019
+    Attrib percent V    0.23804248665631222
+    Attrib percent residue 1    -1.610945074076431
+    Attrib percent residue 2    -2.361224644167662
+    Attrib number atoms    -3.592504524838656
+    Attrib number carbon    -3.7888879810661047
+    Attrib number nitrogen    -4.108525167556743
+    Attrib number oxygen    -3.5851505923715523
+    Attrib number sulphur    -0.15847839064374894
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    2.40279025059642
+    Attrib length    3.859463946223283
+    Attrib mol weight    3.9140627347284522
+    Attrib theortical pI    8.648364206642997
+    Attrib percent A    -4.376726436659041
+    Attrib percent R    -3.6140846911367484
+    Attrib percent N    5.159613862220066
+    Attrib percent D    -3.974739574201279
+    Attrib percent C    5.250161047538549
+    Attrib percent Q    1.2500126964613605
+    Attrib percent E    -2.3645163714492803
+    Attrib percent G    -16.833032546327573
+    Attrib percent H    8.320836991442548
+    Attrib percent I    -2.9540125259373036
+    Attrib percent L    5.602064446367604
+    Attrib percent K    11.253308026347177
+    Attrib percent M    -9.480176907653417
+    Attrib percent F    -5.028571672787676
+    Attrib percent P    -2.0420869892181366
+    Attrib percent S    0.3249666820273297
+    Attrib percent T    -2.8633173380602446
+    Attrib percent W    -7.471617892633609
+    Attrib percent Y    -3.3418775791606508
+    Attrib percent V    4.911539626063569
+    Attrib percent residue 1    2.3283104916917385
+    Attrib percent residue 2    6.351449886078519
+    Attrib number atoms    3.886642027928914
+    Attrib number carbon    3.8653248676301724
+    Attrib number nitrogen    4.244884940882457
+    Attrib number oxygen    3.8673710746212584
+    Attrib number sulphur    3.448481834276104
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    -0.8960598747908932
+    Attrib length    1.2723987546994213
+    Attrib mol weight    1.2679323015031239
+    Attrib theortical pI    2.710989598029715
+    Attrib percent A    6.068676930290413
+    Attrib percent R    -0.888297219490557
+    Attrib percent N    -13.08947171980125
+    Attrib percent D    0.321272804592672
+    Attrib percent C    -0.04264052288666023
+    Attrib percent Q    8.345186211636067
+    Attrib percent E    -12.708108480647294
+    Attrib percent G    13.511129231293511
+    Attrib percent H    -8.185606839281972
+    Attrib percent I    10.750881518185817
+    Attrib percent L    -1.5371629889854508
+    Attrib percent K    -3.373178413707807
+    Attrib percent M    -1.4035115541044219
+    Attrib percent F    6.107523887261218
+    Attrib percent P    -13.667089045920834
+    Attrib percent S    3.7649099579760024
+    Attrib percent T    0.2527534113077258
+    Attrib percent W    16.558497953126093
+    Attrib percent Y    4.256378465069146
+    Attrib percent V    -4.745816029148995
+    Attrib percent residue 1    -1.7687445485728126
+    Attrib percent residue 2    -5.280128921829807
+    Attrib number atoms    1.3333765899936627
+    Attrib number carbon    1.377267227855227
+    Attrib number nitrogen    1.2127769369433992
+    Attrib number oxygen    1.0679792569680155
+    Attrib number sulphur    0.7238122119573381
+Sigmoid Node 22
+    Inputs    Weights
+    Threshold    -5.742706932979029
+    Attrib length    -3.743908031677949
+    Attrib mol weight    -3.5538840185252702
+    Attrib theortical pI    -3.131935383047123
+    Attrib percent A    3.2857920326423744
+    Attrib percent R    3.3823198467898474
+    Attrib percent N    -0.1211518499574314
+    Attrib percent D    -6.89954355628848
+    Attrib percent C    9.209811044608191
+    Attrib percent Q    1.705828760851372
+    Attrib percent E    -12.467127254645119
+    Attrib percent G    5.077137928006241
+    Attrib percent H    -5.175948599558722
+    Attrib percent I    1.5146048102159755
+    Attrib percent L    2.2844008167226595
+    Attrib percent K    12.701115722946408
+    Attrib percent M    -3.4828022813897825
+    Attrib percent F    -5.178844784983681
+    Attrib percent P    -0.3826702816214284
+    Attrib percent S    12.453203685505661
+    Attrib percent T    -1.1989412964813106
+    Attrib percent W    10.489841598694873
+    Attrib percent Y    1.9000486506781626
+    Attrib percent V    -2.822896249118192
+    Attrib percent residue 1    2.5245206209325963
+    Attrib percent residue 2    -1.3575234822779996
+    Attrib number atoms    -3.606633566401637
+    Attrib number carbon    -3.670607354834647
+    Attrib number nitrogen    -3.732942504985072
+    Attrib number oxygen    -3.4957872164573587
+    Attrib number sulphur    1.6283969722058311
+Sigmoid Node 23
+    Inputs    Weights
+    Threshold    0.1797889362081222
+    Attrib length    0.7738945650792699
+    Attrib mol weight    1.4149287329406932
+    Attrib theortical pI    2.2889623974580955
+    Attrib percent A    1.9709854382682352
+    Attrib percent R    4.824644020363984
+    Attrib percent N    -1.1893438516517303
+    Attrib percent D    2.7645764945460107
+    Attrib percent C    13.192520400843522
+    Attrib percent Q    4.551823109137564
+    Attrib percent E    1.3983451959721966
+    Attrib percent G    5.02583062634844
+    Attrib percent H    -6.019084827165488
+    Attrib percent I    -0.09536164769860085
+    Attrib percent L    -7.204287955558655
+    Attrib percent K    -4.777788755686531
+    Attrib percent M    -4.205162801761887
+    Attrib percent F    -1.6676134484215157
+    Attrib percent P    2.9801628494497647
+    Attrib percent S    2.138489447713113
+    Attrib percent T    -4.22329734252845
+    Attrib percent W    -7.404147590909062
+    Attrib percent Y    -9.18609174416015
+    Attrib percent V    -10.393486057291435
+    Attrib percent residue 1    -2.289692778315223
+    Attrib percent residue 2    -4.618658760909959
+    Attrib number atoms    1.424433864577018
+    Attrib number carbon    1.1996184442804658
+    Attrib number nitrogen    1.448041931705048
+    Attrib number oxygen    1.5821408019137295
+    Attrib number sulphur    -1.5704731414882376
+Sigmoid Node 24
+    Inputs    Weights
+    Threshold    -4.315613029228034
+    Attrib length    -3.371602445030604
+    Attrib mol weight    -3.3331751718759994
+    Attrib theortical pI    5.167055188240909
+    Attrib percent A    2.2266544482628143
+    Attrib percent R    -0.788075482890377
+    Attrib percent N    1.4598510953184944
+    Attrib percent D    -9.46152692179467
+    Attrib percent C    8.567898222161594
+    Attrib percent Q    2.67699896832904
+    Attrib percent E    -2.132974399083347
+    Attrib percent G    0.04540166464828716
+    Attrib percent H    -0.7874011815584592
+    Attrib percent I    10.424512511861948
+    Attrib percent L    9.927991915943773
+    Attrib percent K    9.09855086560812
+    Attrib percent M    7.764706007338512
+    Attrib percent F    8.265056433979664
+    Attrib percent P    3.0601224789349666
+    Attrib percent S    0.11012919810958516
+    Attrib percent T    -7.735630091568109
+    Attrib percent W    3.76781153967235
+    Attrib percent Y    -4.996702545249816
+    Attrib percent V    0.2655219991645201
+    Attrib percent residue 1    5.834560866273581
+    Attrib percent residue 2    4.213512301350721
+    Attrib number atoms    -3.3219054445643414
+    Attrib number carbon    -3.2092770501440007
+    Attrib number nitrogen    -3.823538337026536
+    Attrib number oxygen    -3.2362601431139626
+    Attrib number sulphur    2.2198233829902967
+Sigmoid Node 25
+    Inputs    Weights
+    Threshold    2.326196989999642
+    Attrib length    2.7192485254711536
+    Attrib mol weight    2.8177513005945993
+    Attrib theortical pI    -4.0036985628757265
+    Attrib percent A    8.544516288989584
+    Attrib percent R    -2.288662854501887
+    Attrib percent N    6.459967027486096
+    Attrib percent D    -4.094567573229041
+    Attrib percent C    15.801888125882606
+    Attrib percent Q    -0.29152864110034604
+    Attrib percent E    -18.720352655340687
+    Attrib percent G    -22.18283947418261
+    Attrib percent H    -6.774724073437351
+    Attrib percent I    6.4448344731622536
+    Attrib percent L    4.355143303292394
+    Attrib percent K    1.5275947866814477
+    Attrib percent M    -6.865907562763331
+    Attrib percent F    4.464950124613071
+    Attrib percent P    -2.212796643931116
+    Attrib percent S    3.2709431977658836
+    Attrib percent T    0.5446718452481577
+    Attrib percent W    1.7158807309462807
+    Attrib percent Y    0.7264746794918691
+    Attrib percent V    9.819864703521555
+    Attrib percent residue 1    2.1858493608606047
+    Attrib percent residue 2    0.30659017077527867
+    Attrib number atoms    2.76186111803499
+    Attrib number carbon    3.2017001363881024
+    Attrib number nitrogen    2.261379636563558
+    Attrib number oxygen    1.991899820649186
+    Attrib number sulphur    11.489789119228776
+Sigmoid Node 26
+    Inputs    Weights
+    Threshold    1.3384332669616454
+    Attrib length    3.0546690102067897
+    Attrib mol weight    2.651955464280155
+    Attrib theortical pI    1.543496583887274
+    Attrib percent A    5.649588765753206
+    Attrib percent R    -9.632792888808265
+    Attrib percent N    -9.417066953866088
+    Attrib percent D    -3.1339315582981078
+    Attrib percent C    8.442412161841673
+    Attrib percent Q    -1.2656535603514532
+    Attrib percent E    -12.942081929725072
+    Attrib percent G    0.814152287794962
+    Attrib percent H    -2.212928116569857
+    Attrib percent I    -0.23393632527958505
+    Attrib percent L    3.9502620920922413
+    Attrib percent K    -9.1560807594969
+    Attrib percent M    -1.5034922066377323
+    Attrib percent F    -3.0925254206979798
+    Attrib percent P    -9.140657981878626
+    Attrib percent S    6.642985311766504
+    Attrib percent T    2.874070260117979
+    Attrib percent W    -1.751839987251155
+    Attrib percent Y    5.893976327864327
+    Attrib percent V    11.239955420888467
+    Attrib percent residue 1    -2.461226247696893
+    Attrib percent residue 2    -2.9144378748876063
+    Attrib number atoms    2.7430051631045687
+    Attrib number carbon    2.7653125135550285
+    Attrib number nitrogen    2.6252614495218314
+    Attrib number oxygen    2.500613328394622
+    Attrib number sulphur    7.291322978645382
+Sigmoid Node 27
+    Inputs    Weights
+    Threshold    2.0685280720559756
+    Attrib length    4.684470098404637
+    Attrib mol weight    4.464965787193891
+    Attrib theortical pI    -1.588557168794316
+    Attrib percent A    -1.0006116578427806
+    Attrib percent R    4.128756089327707
+    Attrib percent N    -6.952517603534242
+    Attrib percent D    -12.238652020159835
+    Attrib percent C    -0.544075815333604
+    Attrib percent Q    -2.654939949416608
+    Attrib percent E    -7.387080990995194
+    Attrib percent G    -1.49451727757566
+    Attrib percent H    -12.281125761136371
+    Attrib percent I    10.318227056562145
+    Attrib percent L    0.6115072606327344
+    Attrib percent K    -15.220132731669015
+    Attrib percent M    4.200652827878356
+    Attrib percent F    11.437385322242246
+    Attrib percent P    -3.6410296182660318
+    Attrib percent S    9.938982681869215
+    Attrib percent T    6.65413151142174
+    Attrib percent W    3.491262887727487
+    Attrib percent Y    0.0351134416905146
+    Attrib percent V    -1.2727636949211294
+    Attrib percent residue 1    3.272485471148404
+    Attrib percent residue 2    -0.879783246358836
+    Attrib number atoms    4.4923332854575095
+    Attrib number carbon    4.808753603195458
+    Attrib number nitrogen    4.22481065268657
+    Attrib number oxygen    4.3131219117317094
+    Attrib number sulphur    -1.8742186273219197
+Sigmoid Node 28
+    Inputs    Weights
+    Threshold    -4.152914408157274
+    Attrib length    -3.0670846066271618
+    Attrib mol weight    -2.6548609574045368
+    Attrib theortical pI    -4.3810018565195294
+    Attrib percent A    -10.376985332041647
+    Attrib percent R    2.217620002097961
+    Attrib percent N    1.5891567784022806
+    Attrib percent D    -5.672331621195918
+    Attrib percent C    0.44658321115569605
+    Attrib percent Q    5.9159046965355975
+    Attrib percent E    -5.360654915611879
+    Attrib percent G    7.4101322403812695
+    Attrib percent H    5.103593622521131
+    Attrib percent I    -4.508504880251652
+    Attrib percent L    -4.846430327848491
+    Attrib percent K    -1.6049193326465576
+    Attrib percent M    -4.268321080891161
+    Attrib percent F    4.2934011254742845
+    Attrib percent P    8.236853790884568
+    Attrib percent S    10.529674100602778
+    Attrib percent T    5.335978813363075
+    Attrib percent W    7.31359896170573
+    Attrib percent Y    10.13821830432797
+    Attrib percent V    -1.4863812970498402
+    Attrib percent residue 1    -2.9772148454136196
+    Attrib percent residue 2    -2.3471208870293365
+    Attrib number atoms    -2.886067651434003
+    Attrib number carbon    -2.8248806181939887
+    Attrib number nitrogen    -2.4778230575446885
+    Attrib number oxygen    -2.4762033920579656
+    Attrib number sulphur    -0.08096818815814447
+Sigmoid Node 29
+    Inputs    Weights
+    Threshold    0.29450190717719793
+    Attrib length    2.115255511779999
+    Attrib mol weight    2.1025515522322284
+    Attrib theortical pI    -8.738659392985491
+    Attrib percent A    0.9641943267983599
+    Attrib percent R    -9.656634093101074
+    Attrib percent N    12.592510760177644
+    Attrib percent D    -3.128450663765027
+    Attrib percent C    3.8241153889530377
+    Attrib percent Q    -0.5475139843755162
+    Attrib percent E    3.9949313184201736
+    Attrib percent G    -9.37862401412479
+    Attrib percent H    6.426576116810418
+    Attrib percent I    -3.6320688090114706
+    Attrib percent L    7.000156211480806
+    Attrib percent K    -6.099503500864285
+    Attrib percent M    4.890766039680852
+    Attrib percent F    5.429425380966627
+    Attrib percent P    -2.650778027320925
+    Attrib percent S    5.455789536503594
+    Attrib percent T    -2.5117785691378676
+    Attrib percent W    1.5213138602799703
+    Attrib percent Y    -9.383335231018608
+    Attrib percent V    1.3628021385073537
+    Attrib percent residue 1    -0.49701793318133763
+    Attrib percent residue 2    2.038206412390756
+    Attrib number atoms    2.0022418118251966
+    Attrib number carbon    2.0770791141477614
+    Attrib number nitrogen    1.5608913677087195
+    Attrib number oxygen    2.438899262573649
+    Attrib number sulphur    -0.49100748621730383
+Sigmoid Node 30
+    Inputs    Weights
+    Threshold    2.0791193228848837
+    Attrib length    3.005891549755854
+    Attrib mol weight    3.74104866344717
+    Attrib theortical pI    -1.3459990164478683
+    Attrib percent A    -7.974040128200526
+    Attrib percent R    6.019996416432781
+    Attrib percent N    -0.40024055484353716
+    Attrib percent D    5.863921620223318
+    Attrib percent C    -10.591077603090664
+    Attrib percent Q    2.393348467852742
+    Attrib percent E    5.302116076931971
+    Attrib percent G    -9.434514380055811
+    Attrib percent H    -1.2063985087527467
+    Attrib percent I    0.658667262310054
+    Attrib percent L    -8.778386766556979
+    Attrib percent K    4.552147831707516
+    Attrib percent M    2.414372178872767
+    Attrib percent F    -8.617717540547723
+    Attrib percent P    0.28806935059545363
+    Attrib percent S    7.910730335720459
+    Attrib percent T    -0.9034135088887153
+    Attrib percent W    -6.297624203206655
+    Attrib percent Y    -6.564974014970241
+    Attrib percent V    -10.311208738492635
+    Attrib percent residue 1    -2.425277588215532
+    Attrib percent residue 2    -2.2691543466426545
+    Attrib number atoms    3.8157039467006433
+    Attrib number carbon    4.565587447919153
+    Attrib number nitrogen    2.4406823089544463
+    Attrib number oxygen    2.9019807064929495
+    Attrib number sulphur    -4.033788704888676
+Sigmoid Node 31
+    Inputs    Weights
+    Threshold    -0.10128865590977633
+    Attrib length    -0.923524977400813
+    Attrib mol weight    -0.3572337920286336
+    Attrib theortical pI    14.301726523894503
+    Attrib percent A    -5.697648650341434
+    Attrib percent R    7.572960680120785
+    Attrib percent N    1.7127572934521358
+    Attrib percent D    10.450699672595222
+    Attrib percent C    0.9890613084813327
+    Attrib percent Q    3.5363030921047782
+    Attrib percent E    -3.2153892189803517
+    Attrib percent G    0.9087301986493765
+    Attrib percent H    1.136047745066682
+    Attrib percent I    -3.146870261813921
+    Attrib percent L    -6.477386781482126
+    Attrib percent K    5.205297528770224
+    Attrib percent M    -2.324855289733846
+    Attrib percent F    3.4888792995355367
+    Attrib percent P    -1.063880016606811
+    Attrib percent S    -6.76314047307818
+    Attrib percent T    2.6565261560236317
+    Attrib percent W    0.2055939832062557
+    Attrib percent Y    14.902571599522389
+    Attrib percent V    -8.73716905352832
+    Attrib percent residue 1    -0.3614600187969637
+    Attrib percent residue 2    0.04814713247896465
+    Attrib number atoms    -0.3840600138550391
+    Attrib number carbon    -0.16097559997688432
+    Attrib number nitrogen    -0.3180231023158234
+    Attrib number oxygen    -0.8713362124855352
+    Attrib number sulphur    -0.6718763588629264
+Sigmoid Node 32
+    Inputs    Weights
+    Threshold    3.614884385410117
+    Attrib length    8.023544972074314
+    Attrib mol weight    7.6472996822348
+    Attrib theortical pI    -6.22435978493843
+    Attrib percent A    -0.14307936705600738
+    Attrib percent R    -7.552792258656774
+    Attrib percent N    -1.0221504379562745
+    Attrib percent D    -15.475246313231532
+    Attrib percent C    -8.817200312839397
+    Attrib percent Q    -6.640509408886115
+    Attrib percent E    -10.748328838195036
+    Attrib percent G    20.21890496912521
+    Attrib percent H    -10.139756971991302
+    Attrib percent I    0.8071012297477861
+    Attrib percent L    7.926372569467729
+    Attrib percent K    0.13256274969314275
+    Attrib percent M    1.297927723626879
+    Attrib percent F    6.733541994196163
+    Attrib percent P    -5.5200369368733435
+    Attrib percent S    -9.680117312024949
+    Attrib percent T    -0.20688972536010033
+    Attrib percent W    3.7785217307281966
+    Attrib percent Y    -2.3591617930882682
+    Attrib percent V    3.5908479451473303
+    Attrib percent residue 1    1.978052190380438
+    Attrib percent residue 2    -0.8018558303409721
+    Attrib number atoms    8.117317139440443
+    Attrib number carbon    8.790681875135867
+    Attrib number nitrogen    6.507714336941527
+    Attrib number oxygen    6.79950726717173
+    Attrib number sulphur    -0.7944835904208585
+Sigmoid Node 33
+    Inputs    Weights
+    Threshold    -1.0485678399854585
+    Attrib length    2.354248649678335
+    Attrib mol weight    2.346999681373204
+    Attrib theortical pI    -6.595772033487904
+    Attrib percent A    -1.508514500686108
+    Attrib percent R    8.73226017740211
+    Attrib percent N    8.553514815257588
+    Attrib percent D    8.770936583425204
+    Attrib percent C    -18.24345420116819
+    Attrib percent Q    4.855110979214684
+    Attrib percent E    -1.5703435814750197
+    Attrib percent G    7.705632471158843
+    Attrib percent H    -3.5504440542181537
+    Attrib percent I    -6.0638777049155355
+    Attrib percent L    -2.2938322005070235
+    Attrib percent K    -8.102095191833504
+    Attrib percent M    -0.2989999556708314
+    Attrib percent F    0.2620237779343561
+    Attrib percent P    3.8417348770584043
+    Attrib percent S    4.118079750644023
+    Attrib percent T    -1.0154918393536587
+    Attrib percent W    -2.2636682953816627
+    Attrib percent Y    0.7142783255655447
+    Attrib percent V    -4.606123019684795
+    Attrib percent residue 1    3.214301156759992
+    Attrib percent residue 2    1.5544941783787665
+    Attrib number atoms    2.044753636977331
+    Attrib number carbon    2.1661917708964333
+    Attrib number nitrogen    3.124924573740085
+    Attrib number oxygen    2.5200036707157936
+    Attrib number sulphur    -2.4785070707802364
+Sigmoid Node 34
+    Inputs    Weights
+    Threshold    0.02970846854791037
+    Attrib length    0.9433929084210511
+    Attrib mol weight    0.96602875838073
+    Attrib theortical pI    -12.348326043211141
+    Attrib percent A    -0.12362846160332555
+    Attrib percent R    5.812883071588178
+    Attrib percent N    -8.93198837540117
+    Attrib percent D    -0.9772781746158273
+    Attrib percent C    11.722447903700735
+    Attrib percent Q    -0.3610596097209631
+    Attrib percent E    6.401650278608751
+    Attrib percent G    -15.274516247006074
+    Attrib percent H    7.809128037385502
+    Attrib percent I    0.8401492505490727
+    Attrib percent L    -1.8350855777323947
+    Attrib percent K    0.03788666691477649
+    Attrib percent M    -3.0817579977740595
+    Attrib percent F    8.004435245730539
+    Attrib percent P    -9.402465436981466
+    Attrib percent S    6.104314695788805
+    Attrib percent T    -2.9316806129365043
+    Attrib percent W    -3.834448316485294
+    Attrib percent Y    6.053982576780629
+    Attrib percent V    0.6932888365394163
+    Attrib percent residue 1    2.1008920390559274
+    Attrib percent residue 2    5.108524540331216
+    Attrib number atoms    0.8844638901621261
+    Attrib number carbon    1.0301765171570136
+    Attrib number nitrogen    0.20397564242527338
+    Attrib number oxygen    1.37732058550697
+    Attrib number sulphur    0.020316436581935656
+Sigmoid Node 35
+    Inputs    Weights
+    Threshold    -3.508469608969336
+    Attrib length    -3.663019185459515
+    Attrib mol weight    -3.6629957233028154
+    Attrib theortical pI    3.1908843533980957
+    Attrib percent A    2.714000966192963
+    Attrib percent R    4.875511169293319
+    Attrib percent N    -2.182806845914027
+    Attrib percent D    -7.166308779053111
+    Attrib percent C    18.59960546976823
+    Attrib percent Q    4.1779922220811345
+    Attrib percent E    3.6953437971979572
+    Attrib percent G    5.675294037828452
+    Attrib percent H    0.4714694684313047
+    Attrib percent I    -12.823889535140648
+    Attrib percent L    -3.440393976281798
+    Attrib percent K    -3.4764099584391137
+    Attrib percent M    -9.112805481142184
+    Attrib percent F    -6.80457341625132
+    Attrib percent P    8.65121921331923
+    Attrib percent S    9.434867351366318
+    Attrib percent T    6.385975253221933
+    Attrib percent W    3.991078704977362
+    Attrib percent Y    -0.8766112267113703
+    Attrib percent V    -13.426063290299176
+    Attrib percent residue 1    -0.3144099464115902
+    Attrib percent residue 2    -1.2598142002293318
+    Attrib number atoms    -3.8146363865520416
+    Attrib number carbon    -4.091230848348628
+    Attrib number nitrogen    -3.8577048661745654
+    Attrib number oxygen    -3.0172805151630993
+    Attrib number sulphur    2.449447095393582
+Sigmoid Node 36
+    Inputs    Weights
+    Threshold    -0.7311512366216142
+    Attrib length    -0.4995391483205169
+    Attrib mol weight    -0.4683284494365299
+    Attrib theortical pI    -2.884249600713278
+    Attrib percent A    -10.508606110681118
+    Attrib percent R    6.15838560825559
+    Attrib percent N    0.6714573605295088
+    Attrib percent D    10.376972261553052
+    Attrib percent C    6.594787415192723
+    Attrib percent Q    -3.2450640888681805
+    Attrib percent E    10.308800799903167
+    Attrib percent G    12.909425587638832
+    Attrib percent H    -2.7758615562443243
+    Attrib percent I    -1.2269173845873602
+    Attrib percent L    -8.432251254658729
+    Attrib percent K    2.814952261852376
+    Attrib percent M    -0.243325339471405
+    Attrib percent F    -2.7657020757120563
+    Attrib percent P    -4.572219226146071
+    Attrib percent S    -9.911289013051062
+    Attrib percent T    -1.705706164599049
+    Attrib percent W    -7.1358394251397375
+    Attrib percent Y    -1.3614004933130155
+    Attrib percent V    10.344347851738023
+    Attrib percent residue 1    -2.576334203800696
+    Attrib percent residue 2    -3.958800201437417
+    Attrib number atoms    -0.6091870965348402
+    Attrib number carbon    -0.5551107915699007
+    Attrib number nitrogen    -0.15485774850704823
+    Attrib number oxygen    -0.7578258242459971
+    Attrib number sulphur    5.745391508986851
+Sigmoid Node 37
+    Inputs    Weights
+    Threshold    2.7400098081856137
+    Attrib length    2.8934307154154415
+    Attrib mol weight    2.7794867732012
+    Attrib theortical pI    4.453200868291315
+    Attrib percent A    1.9069645962622848
+    Attrib percent R    -3.5525530013483393
+    Attrib percent N    5.908140588712454
+    Attrib percent D    6.103438352693941
+    Attrib percent C    2.463183982946478
+    Attrib percent Q    -3.8849747742556535
+    Attrib percent E    -6.8112270451554044
+    Attrib percent G    10.75087948815261
+    Attrib percent H    12.46034941408424
+    Attrib percent I    -4.919288063366147
+    Attrib percent L    -4.424429380265638
+    Attrib percent K    -3.603735585450764
+    Attrib percent M    -9.092470925383951
+    Attrib percent F    3.060627741608118
+    Attrib percent P    0.63273576169604
+    Attrib percent S    -13.794916600325758
+    Attrib percent T    -0.7322129528242831
+    Attrib percent W    -1.113322091866055
+    Attrib percent Y    3.96761781444676
+    Attrib percent V    -4.8887840013254475
+    Attrib percent residue 1    -4.727259882632071
+    Attrib percent residue 2    0.99133016515791
+    Attrib number atoms    2.481367120705548
+    Attrib number carbon    2.7971347083797267
+    Attrib number nitrogen    2.9754007191904126
+    Attrib number oxygen    2.9778101886576738
+    Attrib number sulphur    -6.356326868926753
+Sigmoid Node 38
+    Inputs    Weights
+    Threshold    -5.627134764560296
+    Attrib length    -1.098513689696603
+    Attrib mol weight    -1.1431215576048637
+    Attrib theortical pI    -5.656087897800412
+    Attrib percent A    -8.611904205083023
+    Attrib percent R    10.233009054399043
+    Attrib percent N    0.10560625839224665
+    Attrib percent D    0.424023005129655
+    Attrib percent C    -3.57233569708238
+    Attrib percent Q    1.4752800111161866
+    Attrib percent E    3.799113118740323
+    Attrib percent G    9.992457499938439
+    Attrib percent H    -10.198468904101665
+    Attrib percent I    6.437713123575858
+    Attrib percent L    -3.4287170471640067
+    Attrib percent K    -16.19726955083715
+    Attrib percent M    -11.414997519508422
+    Attrib percent F    -1.9430358325966515
+    Attrib percent P    16.154623363010256
+    Attrib percent S    13.710242403377936
+    Attrib percent T    7.70137359993866
+    Attrib percent W    0.16618486308086078
+    Attrib percent Y    4.045330208847759
+    Attrib percent V    7.007166685957987
+    Attrib percent residue 1    2.431951675560896
+    Attrib percent residue 2    -3.3082645544337708
+    Attrib number atoms    -1.0279757956592872
+    Attrib number carbon    -1.5696564916559415
+    Attrib number nitrogen    -0.9237121227974597
+    Attrib number oxygen    -0.5254050233590941
+    Attrib number sulphur    -0.5525979054675513
+Sigmoid Node 39
+    Inputs    Weights
+    Threshold    -1.388408306168663
+    Attrib length    0.04753718279577136
+    Attrib mol weight    0.026224574840332814
+    Attrib theortical pI    0.7013562460271928
+    Attrib percent A    -3.421990827953322
+    Attrib percent R    7.435487709667488
+    Attrib percent N    5.3285757835451335
+    Attrib percent D    -1.8505798574072136
+    Attrib percent C    -10.708217089155598
+    Attrib percent Q    3.3594685766100265
+    Attrib percent E    -4.66481955692297
+    Attrib percent G    0.5907000947877394
+    Attrib percent H    0.8695298505024129
+    Attrib percent I    2.0067074090057146
+    Attrib percent L    2.6805998860823252
+    Attrib percent K    0.7228577084685635
+    Attrib percent M    -0.670394768755262
+    Attrib percent F    7.979233565747431
+    Attrib percent P    11.501444644853178
+    Attrib percent S    -5.183652042502313
+    Attrib percent T    2.799491851443573
+    Attrib percent W    6.008038068677008
+    Attrib percent Y    6.631376279272516
+    Attrib percent V    -4.3914655196233126
+    Attrib percent residue 1    6.052809946533752
+    Attrib percent residue 2    5.9320935418894445
+    Attrib number atoms    0.009263914145437735
+    Attrib number carbon    0.06955102674441925
+    Attrib number nitrogen    0.39766859774407376
+    Attrib number oxygen    0.006187754785558431
+    Attrib number sulphur    -2.356700379854645
+Sigmoid Node 40
+    Inputs    Weights
+    Threshold    -1.736413319807045
+    Attrib length    -3.992906779720586
+    Attrib mol weight    -3.323431688648852
+    Attrib theortical pI    -1.5244987518893969
+    Attrib percent A    -7.5305280170857944
+    Attrib percent R    -2.219993346056726
+    Attrib percent N    0.10318307309971206
+    Attrib percent D    2.11128490173236
+    Attrib percent C    6.829451578356427
+    Attrib percent Q    3.988788050292932
+    Attrib percent E    13.560664809648383
+    Attrib percent G    1.8036741884831236
+    Attrib percent H    9.218743296747547
+    Attrib percent I    -2.353810475810943
+    Attrib percent L    5.1573088757610845
+    Attrib percent K    8.475969895563106
+    Attrib percent M    2.5270820100046576
+    Attrib percent F    0.7498934448167914
+    Attrib percent P    -2.6629288942203857
+    Attrib percent S    -10.396112417408434
+    Attrib percent T    -1.4010877739652827
+    Attrib percent W    11.816957582317995
+    Attrib percent Y    2.253587701395739
+    Attrib percent V    -5.740591238114129
+    Attrib percent residue 1    2.1024177446956105
+    Attrib percent residue 2    5.136588298050597
+    Attrib number atoms    -3.490213187069279
+    Attrib number carbon    -3.461908361623395
+    Attrib number nitrogen    -3.622658124318077
+    Attrib number oxygen    -3.109699864060431
+    Attrib number sulphur    -4.634075430246705
+Sigmoid Node 41
+    Inputs    Weights
+    Threshold    0.6746474174829666
+    Attrib length    0.5986794227969029
+    Attrib mol weight    1.396532123359381
+    Attrib theortical pI    -7.402222012596679
+    Attrib percent A    2.966768226846764
+    Attrib percent R    -1.2714330896739041
+    Attrib percent N    3.4468845782138806
+    Attrib percent D    6.356232288111282
+    Attrib percent C    7.1656860172017955
+    Attrib percent Q    9.76685624676306
+    Attrib percent E    -6.771910892757418
+    Attrib percent G    -5.073194093736639
+    Attrib percent H    -3.2884453932568034
+    Attrib percent I    0.3513651705309928
+    Attrib percent L    -0.5963231796637232
+    Attrib percent K    -0.3695825569399348
+    Attrib percent M    2.3452506762147594
+    Attrib percent F    6.533603383258613
+    Attrib percent P    -9.50960661259294
+    Attrib percent S    -1.6626798260896947
+    Attrib percent T    8.95391768183191
+    Attrib percent W    -7.7688917084486775
+    Attrib percent Y    -3.1147593478305065
+    Attrib percent V    -3.4152004279871706
+    Attrib percent residue 1    -0.9820797050573946
+    Attrib percent residue 2    -2.073492161435289
+    Attrib number atoms    1.2243768438125653
+    Attrib number carbon    1.6780324480500497
+    Attrib number nitrogen    1.036253184083011
+    Attrib number oxygen    0.8313287817214782
+    Attrib number sulphur    3.6812807709757815
+Sigmoid Node 42
+    Inputs    Weights
+    Threshold    6.2843294822936935
+    Attrib length    5.045432987688224
+    Attrib mol weight    4.882523185380465
+    Attrib theortical pI    1.5021623234016162
+    Attrib percent A    1.746359184916282
+    Attrib percent R    -0.29658425619352285
+    Attrib percent N    -3.5698981273782517
+    Attrib percent D    6.706509487779014
+    Attrib percent C    3.594217398515277
+    Attrib percent Q    6.0802887793953815
+    Attrib percent E    2.4077857018811084
+    Attrib percent G    -13.713759647646398
+    Attrib percent H    -7.454677834171716
+    Attrib percent I    5.796974577488031
+    Attrib percent L    -0.3917597788826374
+    Attrib percent K    -0.774716719002012
+    Attrib percent M    -7.385052311578879
+    Attrib percent F    -1.9279009142692634
+    Attrib percent P    -6.146832072946231
+    Attrib percent S    -14.414369903496452
+    Attrib percent T    -8.771324994166113
+    Attrib percent W    5.720205900104506
+    Attrib percent Y    5.253755412824389
+    Attrib percent V    0.17997030410552764
+    Attrib percent residue 1    0.7034480729224847
+    Attrib percent residue 2    -0.08254614279647708
+    Attrib number atoms    4.96934923515758
+    Attrib number carbon    5.1450332357103425
+    Attrib number nitrogen    4.607150994050093
+    Attrib number oxygen    4.516861725963498
+    Attrib number sulphur    5.203327846253221
+Class Apoptosis
+    Input
+    Node 0
+Class Binding and Uptake of Ligands by Scaveng
+    Input
+    Node 1
+Class Cell Cycle
+    Input
+    Node 2
+Class Cell-Cell communication
+    Input
+    Node 3
+Class Cellular responses to stress
+    Input
+    Node 4
+Class Chromatin organization
+    Input
+    Node 5
+Class Developmental Biology
+    Input
+    Node 6
+Class Disease
+    Input
+    Node 7
+Class DNA Repair
+    Input
+    Node 8
+Class Extracellular matrix organization
+    Input
+    Node 9
+Class Gene Expression
+    Input
+    Node 10
+Class Hemostasis
+    Input
+    Node 11
+Class Immune System
+    Input
+    Node 12
+Class Membrane Trafficking
+    Input
+    Node 13
+Class Metabolism
+    Input
+    Node 14
+Class Metabolism of proteins
+    Input
+    Node 15
+Class Neuronal System
+    Input
+    Node 16
+Class Signal Transduction
+    Input
+    Node 17
+Class Transmembrane transport of small molecul
+    Input
+    Node 18
+
+
+Time taken to build model: 57.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1056               34.7483 %
+Incorrectly Classified Instances      1983               65.2517 %
+Kappa statistic                          0.2798
+Mean absolute error                      0.0716
+Root mean squared error                  0.23  
+Relative absolute error                 74.3334 %
+Root relative squared error            104.8114 %
+Total Number of Instances             3039     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.019     0.013      0.024     0.019     0.022      0.621    Apoptosis
+                 0.809     0.008      0.802     0.809     0.805      0.916    Binding and Uptake of Ligands by Scaveng
+                 0.287     0.05       0.251     0.287     0.268      0.741    Cell Cycle
+                 0.297     0.011      0.365     0.297     0.328      0.724    Cell-Cell communication
+                 0.07      0.009      0.152     0.07      0.096      0.586    Cellular responses to stress
+                 0.367     0.014      0.295     0.367     0.327      0.817    Chromatin organization
+                 0.073     0.032      0.087     0.073     0.079      0.646    Developmental Biology
+                 0.224     0.052      0.327     0.224     0.266      0.654    Disease
+                 0         0.006      0         0         0          0.563    DNA Repair
+                 0.381     0.02       0.433     0.381     0.405      0.844    Extracellular matrix organization
+                 0.187     0.033      0.211     0.187     0.198      0.702    Gene Expression
+                 0.167     0.07       0.142     0.167     0.153      0.584    Hemostasis
+                 0.404     0.089      0.382     0.404     0.393      0.717    Immune System
+                 0.048     0.014      0.044     0.048     0.046      0.723    Membrane Trafficking
+                 0.578     0.18       0.407     0.578     0.477      0.774    Metabolism
+                 0.042     0.035      0.057     0.042     0.048      0.601    Metabolism of proteins
+                 0.449     0.019      0.525     0.449     0.484      0.848    Neuronal System
+                 0.433     0.045      0.494     0.433     0.462      0.783    Signal Transduction
+                 0.443     0.018      0.47      0.443     0.456      0.857    Transmembrane transport of small molecul
+Weighted Avg.    0.347     0.067      0.338     0.347     0.338      0.729
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   <-- classified as
+   1   0   7   2   1   2   3   2   1   0   3   5   6   0  11   3   0   5   0 |   a = Apoptosis
+   0  89   1   0   0   0   3   0   0   0   3   3   5   0   6   0   0   0   0 |   b = Binding and Uptake of Ligands by Scaveng
+   5   0  48   0   2   4   8  10   3   2   7  18  16   8  24   6   0   6   0 |   c = Cell Cycle
+   0   1   2  19   0   0   3   0   1   6   2   3   6   2   2   7   1   6   3 |   d = Cell-Cell communication
+   1   0   8   0   5   3   3   8   3   4   5   5   7   2   9   4   1   2   1 |   e = Cellular responses to stress
+   0   1   8   0   1  18   1   3   0   0   1   7   4   0   4   1   0   0   0 |   f = Chromatin organization
+   3   3   5   5   2   9   9   8   1  14   7   9  15   1  21   3   4   2   3 |   g = Developmental Biology
+   5   1  21   5   2   4  11  69   1   5   7  19  37   5  78  12   4  14   8 |   h = Disease
+   0   0   3   0   1   1   1   1   0   1   4   5   2   1   7   2   0   2   1 |   i = DNA Repair
+   3   1   1   5   0   1  11   5   0  45   3  13  11   0   8   4   2   4   1 |   j = Extracellular matrix organization
+   3   0   8   3   1   4  10   7   1   3  26  13  12   2  34   3   3   6   0 |   k = Gene Expression
+   2   2  16   2   6   2   3  12   0   7  14  33  30   4  36   8   4  12   5 |   l = Hemostasis
+   8   5  20   3   5   4   9  16   0   3  10  31 148   9  66   5   4  14   6 |   m = Immune System
+   2   0   6   0   1   0   2   4   0   0   1   7   6   2   6   1   2   2   0 |   n = Membrane Trafficking
+   1   5  13   3   1   3  10  34   3   2  12  25  38   4 309  22  13  21  16 |   o = Metabolism
+   1   0  11   2   1   1   2  18   1   3   6  13  13   0  52   6   0  11   2 |   p = Metabolism of proteins
+   1   0   1   1   1   1   2   0   0   2   4   7   6   0  28   1  62  14   7 |   q = Neuronal System
+   5   2  10   1   3   4  10  10   2   5   7  15  24   5  30  16   8 120   0 |   r = Signal Transduction
+   0   1   2   1   0   0   2   4   0   2   1   2   1   0  29   2  10   2  47 |   s = Transmembrane transport of small molecul
+

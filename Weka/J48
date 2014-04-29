@@ -1,0 +1,1547 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     protein_metrics_trimmed
+Instances:    3039
+Attributes:   31
+              function
+              length
+              mol weight
+              theortical pI
+              percent A
+              percent R
+              percent N
+              percent D
+              percent C
+              percent Q
+              percent E
+              percent G
+              percent H
+              percent I
+              percent L
+              percent K
+              percent M
+              percent F
+              percent P
+              percent S
+              percent T
+              percent W
+              percent Y
+              percent V
+              percent residue 1
+              percent residue 2
+              number atoms
+              number carbon
+              number nitrogen
+              number oxygen
+              number sulphur
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+number nitrogen <= 199
+|   percent K <= 9.20635
+|   |   percent Y <= 3.66972
+|   |   |   mol weight <= 15370
+|   |   |   |   percent T <= 7.61589
+|   |   |   |   |   percent R <= 3.21101
+|   |   |   |   |   |   percent D <= 4.2: Immune System (6.0)
+|   |   |   |   |   |   percent D > 4.2
+|   |   |   |   |   |   |   mol weight <= 9471.14: Transmembrane transport of small molecul (2.0)
+|   |   |   |   |   |   |   mol weight > 9471.14: Binding and Uptake of Ligands by Scaveng (2.0/1.0)
+|   |   |   |   |   percent R > 3.21101
+|   |   |   |   |   |   percent W <= 2.42537
+|   |   |   |   |   |   |   percent M <= 2.55864
+|   |   |   |   |   |   |   |   percent K <= 2.6971
+|   |   |   |   |   |   |   |   |   number sulphur <= 4: Cell-Cell communication (2.0/1.0)
+|   |   |   |   |   |   |   |   |   number sulphur > 4
+|   |   |   |   |   |   |   |   |   |   percent R <= 4.96032: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent R > 4.96032: Immune System (6.0)
+|   |   |   |   |   |   |   |   percent K > 2.6971
+|   |   |   |   |   |   |   |   |   percent I <= 7.42188
+|   |   |   |   |   |   |   |   |   |   length <= 89: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   length > 89: Signal Transduction (14.0/1.0)
+|   |   |   |   |   |   |   |   |   percent I > 7.42188: Immune System (2.0/1.0)
+|   |   |   |   |   |   |   percent M > 2.55864
+|   |   |   |   |   |   |   |   percent G <= 11.6438
+|   |   |   |   |   |   |   |   |   percent R <= 9.34579
+|   |   |   |   |   |   |   |   |   |   percent A <= 7.35057
+|   |   |   |   |   |   |   |   |   |   |   percent D <= 2.849: Metabolism (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent D > 2.849: Signal Transduction (4.0)
+|   |   |   |   |   |   |   |   |   |   percent A > 7.35057: Metabolism (13.0/1.0)
+|   |   |   |   |   |   |   |   |   percent R > 9.34579: Signal Transduction (5.0)
+|   |   |   |   |   |   |   |   percent G > 11.6438: Disease (2.0/1.0)
+|   |   |   |   |   |   percent W > 2.42537
+|   |   |   |   |   |   |   percent N <= 1.2987
+|   |   |   |   |   |   |   |   number sulphur <= 4: Metabolism of proteins (3.0/1.0)
+|   |   |   |   |   |   |   |   number sulphur > 4: Cell Cycle (2.0)
+|   |   |   |   |   |   |   percent N > 1.2987: Signal Transduction (4.0/1.0)
+|   |   |   |   percent T > 7.61589
+|   |   |   |   |   percent W <= 1.58343
+|   |   |   |   |   |   percent W <= 0.373134
+|   |   |   |   |   |   |   theortical pI <= 5.02505: Cellular responses to stress (2.0)
+|   |   |   |   |   |   |   theortical pI > 5.02505: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   percent W > 0.373134: Immune System (3.0)
+|   |   |   |   |   percent W > 1.58343: Binding and Uptake of Ligands by Scaveng (6.0/1.0)
+|   |   |   mol weight > 15370
+|   |   |   |   length <= 146: Disease (3.0/1.0)
+|   |   |   |   length > 146
+|   |   |   |   |   percent C <= 1.01911: Hemostasis (3.0)
+|   |   |   |   |   percent C > 1.01911: Binding and Uptake of Ligands by Scaveng (4.0/1.0)
+|   |   percent Y > 3.66972
+|   |   |   percent W <= 0.342466
+|   |   |   |   number oxygen <= 265
+|   |   |   |   |   percent C <= 4.86815: Transmembrane transport of small molecul (3.0/1.0)
+|   |   |   |   |   percent C > 4.86815: Immune System (3.0)
+|   |   |   |   number oxygen > 265: Metabolism of proteins (3.0/1.0)
+|   |   |   percent W > 0.342466
+|   |   |   |   percent S <= 7.89474
+|   |   |   |   |   percent Q <= 3.72578
+|   |   |   |   |   |   percent D <= 5.55109: Metabolism of proteins (2.0)
+|   |   |   |   |   |   percent D > 5.55109: Disease (2.0/1.0)
+|   |   |   |   |   percent Q > 3.72578: Metabolism (4.0)
+|   |   |   |   percent S > 7.89474
+|   |   |   |   |   percent G <= 3.56347: Signal Transduction (3.0/1.0)
+|   |   |   |   |   percent G > 3.56347: Binding and Uptake of Ligands by Scaveng (86.0/1.0)
+|   percent K > 9.20635
+|   |   percent E <= 7.08447
+|   |   |   percent C <= 2.18579
+|   |   |   |   number nitrogen <= 152: Metabolism (5.0)
+|   |   |   |   number nitrogen > 152: Chromatin organization (17.0/3.0)
+|   |   |   percent C > 2.18579
+|   |   |   |   length <= 91: Apoptosis (2.0)
+|   |   |   |   length > 91
+|   |   |   |   |   percent D <= 4.58515: Signal Transduction (8.0)
+|   |   |   |   |   percent D > 4.58515: Hemostasis (2.0/1.0)
+|   |   percent E > 7.08447
+|   |   |   percent F <= 1.36054
+|   |   |   |   theortical pI <= 7.1614: Neuronal System (2.0)
+|   |   |   |   theortical pI > 7.1614: Cellular responses to stress (3.0/1.0)
+|   |   |   percent F > 1.36054
+|   |   |   |   mol weight <= 7832.12: Cellular responses to stress (3.0/2.0)
+|   |   |   |   mol weight > 7832.12
+|   |   |   |   |   percent D <= 4.77876
+|   |   |   |   |   |   percent W <= 0.979432: Metabolism (9.0/1.0)
+|   |   |   |   |   |   percent W > 0.979432: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   percent D > 4.77876: Cell Cycle (8.0/1.0)
+number nitrogen > 199
+|   percent F <= 4.03509
+|   |   percent P <= 14.7679
+|   |   |   percent C <= 4.06504
+|   |   |   |   percent T <= 7.38636
+|   |   |   |   |   percent G <= 6.08649
+|   |   |   |   |   |   percent I <= 7.01754
+|   |   |   |   |   |   |   percent E <= 5.50459
+|   |   |   |   |   |   |   |   percent N <= 5.91581
+|   |   |   |   |   |   |   |   |   percent K <= 3.78301
+|   |   |   |   |   |   |   |   |   |   percent A <= 9.00693: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   percent A > 9.00693: Gene Expression (3.0/2.0)
+|   |   |   |   |   |   |   |   |   percent K > 3.78301
+|   |   |   |   |   |   |   |   |   |   percent K <= 6.16997
+|   |   |   |   |   |   |   |   |   |   |   percent Y <= 2.76356
+|   |   |   |   |   |   |   |   |   |   |   |   percent G <= 5.35714: Neuronal System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent G > 5.35714: Developmental Biology (5.0)
+|   |   |   |   |   |   |   |   |   |   |   percent Y > 2.76356: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   percent K > 6.16997
+|   |   |   |   |   |   |   |   |   |   |   percent E <= 3.9312: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent E > 3.9312
+|   |   |   |   |   |   |   |   |   |   |   |   percent F <= 3.2967
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.33622: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.33622: Cellular responses to stress (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent F > 3.2967
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.00782: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.00782: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   percent N > 5.91581
+|   |   |   |   |   |   |   |   |   length <= 339: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   length > 339: Extracellular matrix organization (2.0/1.0)
+|   |   |   |   |   |   |   percent E > 5.50459
+|   |   |   |   |   |   |   |   percent G <= 3.96825
+|   |   |   |   |   |   |   |   |   theortical pI <= 4.77839
+|   |   |   |   |   |   |   |   |   |   percent A <= 8.10093: Membrane Trafficking (2.0)
+|   |   |   |   |   |   |   |   |   |   percent A > 8.10093: Apoptosis (4.0)
+|   |   |   |   |   |   |   |   |   theortical pI > 4.77839
+|   |   |   |   |   |   |   |   |   |   percent W <= 1.95195
+|   |   |   |   |   |   |   |   |   |   |   percent H <= 1.56522
+|   |   |   |   |   |   |   |   |   |   |   |   percent D <= 6.14035: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent D > 6.14035: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent H > 1.56522
+|   |   |   |   |   |   |   |   |   |   |   |   percent E <= 6.33075: Metabolism of proteins (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent E > 6.33075
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 6.04167
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 3.48574: Cell Cycle (25.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 3.48574
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.08232
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 0.853242: Membrane Trafficking (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 0.853242: Cell Cycle (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.08232: Cell Cycle (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 6.04167
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 6.54762: Immune System (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 6.54762
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 0.497512: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 0.497512
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 398: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 398: Cell Cycle (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent W > 1.95195
+|   |   |   |   |   |   |   |   |   |   |   number sulphur <= 17: Metabolism (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   number sulphur > 17: Extracellular matrix organization (4.0/1.0)
+|   |   |   |   |   |   |   |   percent G > 3.96825
+|   |   |   |   |   |   |   |   |   percent H <= 1.30577
+|   |   |   |   |   |   |   |   |   |   theortical pI <= 8.91837
+|   |   |   |   |   |   |   |   |   |   |   percent G <= 5.71429
+|   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.54639
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 2.74123: Disease (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Y > 2.74123: Immune System (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.54639
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 4.48549
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.70858: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.70858: Developmental Biology (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 4.48549
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 374: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 374: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent G > 5.71429
+|   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.32688: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.32688: Developmental Biology (2.0)
+|   |   |   |   |   |   |   |   |   |   theortical pI > 8.91837
+|   |   |   |   |   |   |   |   |   |   |   percent R <= 7.54717: Extracellular matrix organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent R > 7.54717: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   percent H > 1.30577
+|   |   |   |   |   |   |   |   |   |   percent V <= 7.22714
+|   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.76782
+|   |   |   |   |   |   |   |   |   |   |   |   percent G <= 5.74713
+|   |   |   |   |   |   |   |   |   |   |   |   |   length <= 427
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 336: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 336: Extracellular matrix organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   length > 427
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.00158: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.00158
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 5.21327
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 30: Signal Transduction (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 30: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 5.21327: Gene Expression (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent G > 5.74713
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.26171
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.83387: Membrane Trafficking (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.83387: Cell-Cell communication (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.26171: Chromatin organization (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent Q > 3.76782
+|   |   |   |   |   |   |   |   |   |   |   |   percent D <= 6.80628
+|   |   |   |   |   |   |   |   |   |   |   |   |   number oxygen <= 1066
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 180: Metabolism of proteins (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 180: Chromatin organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 2.85488
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 8.08824
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.74319
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.09836: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.09836: Cell Cycle (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.74319: Metabolism (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 8.08824: DNA Repair (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 2.85488
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 362: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 362: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   number oxygen > 1066
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent S <= 9.41476
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 2.32019
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.29253
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 <= 14.5669: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 > 14.5669: Cell Cycle (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.29253
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 3.45304
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 6.57895
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.36278: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.36278: Cellular responses to stress (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 6.57895
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 6.36462: Chromatin organization (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 6.36462: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 3.45304
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number nitrogen <= 866
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 8.18666: Immune System (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 8.18666: Cell Cycle (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number nitrogen > 866
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 2.0337
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 2.5641
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 5.24412: Hemostasis (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 5.24412
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.18445: Cell Cycle (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.18445: Signal Transduction (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y > 2.5641
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 968: Membrane Trafficking (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 968: Apoptosis (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 2.0337
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 5.24862
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 9.61338: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 9.61338: Cell Cycle (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 5.24862: Metabolism of proteins (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 2.32019
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.34928
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.34936
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K <= 5.88235
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 3.45489: Membrane Trafficking (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 3.45489: Cell Cycle (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K > 5.88235: Immune System (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.34936: Signal Transduction (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.34928
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 9.49868
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.89674: Cell-Cell communication (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.89674: Hemostasis (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 9.49868
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.64135
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 0.971922: Cell Cycle (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 0.971922: Hemostasis (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.64135
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 5.26459: Immune System (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 5.26459
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V <= 5.64334
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 5.06024: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 5.06024: Cell-Cell communication (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V > 5.64334
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 7.33427: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 7.33427: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent S > 9.41476
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.46334: Cellular responses to stress (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.46334: Developmental Biology (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 9.21305
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 2.29709
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 8.25243
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 2.18688
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 5.22876: Apoptosis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 5.22876: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 2.18688
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E <= 7.56303: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E > 7.56303: Cell Cycle (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 8.25243
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 0.851064: DNA Repair (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 0.851064
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 3.94265: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 3.94265: Metabolism (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 2.29709
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 3.7296: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 3.7296
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.01626: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.01626
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 8.69565: Chromatin organization (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 8.69565: Apoptosis (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 9.21305
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 4.83092
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.16749: Signal Transduction (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.16749: Chromatin organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 4.83092
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 5.37931: Cell Cycle (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 5.37931
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.36278: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.36278: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent D > 6.80628
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 2.58303
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.37838
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 5.96026: Gene Expression (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 5.96026: Developmental Biology (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.37838
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 9.72447: Cell Cycle (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 9.72447: Apoptosis (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 2.58303
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 24
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 278: Chromatin organization (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 278: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 24: Cell-Cell communication (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent V > 7.22714
+|   |   |   |   |   |   |   |   |   |   |   percent E <= 10.1545
+|   |   |   |   |   |   |   |   |   |   |   |   percent S <= 5.71429
+|   |   |   |   |   |   |   |   |   |   |   |   |   length <= 319: Metabolism (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   length > 319: Disease (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent S > 5.71429
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 6.41711
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 2.94118: Cell-Cell communication (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 2.94118
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.29448
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 3.38295
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 6.2436: Cell Cycle (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 6.2436: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 3.38295
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 8.24587: Metabolism (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 8.24587: Developmental Biology (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.29448
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 64: Immune System (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 64: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 6.41711
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 7.17909
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.08466: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.08466: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 7.17909: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent E > 10.1545
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 6: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 6: Metabolism of proteins (3.0/1.0)
+|   |   |   |   |   |   percent I > 7.01754
+|   |   |   |   |   |   |   length <= 468
+|   |   |   |   |   |   |   |   percent M <= 3.76712
+|   |   |   |   |   |   |   |   |   percent N <= 3.5248: Immune System (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent N > 3.5248: Metabolism (9.0/1.0)
+|   |   |   |   |   |   |   |   percent M > 3.76712: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   length > 468
+|   |   |   |   |   |   |   |   percent A <= 6.91943: Immune System (9.0/1.0)
+|   |   |   |   |   |   |   |   percent A > 6.91943: Apoptosis (3.0/1.0)
+|   |   |   |   |   percent G > 6.08649
+|   |   |   |   |   |   percent residue 1 <= 12.3318
+|   |   |   |   |   |   |   percent E <= 8.32178
+|   |   |   |   |   |   |   |   length <= 773
+|   |   |   |   |   |   |   |   |   percent C <= 1.61765
+|   |   |   |   |   |   |   |   |   |   percent residue 2 <= 14.9425
+|   |   |   |   |   |   |   |   |   |   |   number sulphur <= 8: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   number sulphur > 8
+|   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.13316: Disease (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent Q > 3.13316
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 5.22565: Developmental Biology (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 5.22565: Gene Expression (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent residue 2 > 14.9425: Cell Cycle (3.0/2.0)
+|   |   |   |   |   |   |   |   |   percent C > 1.61765
+|   |   |   |   |   |   |   |   |   |   percent V <= 6.94259
+|   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.29986: Hemostasis (4.0)
+|   |   |   |   |   |   |   |   |   |   |   percent Q > 3.29986
+|   |   |   |   |   |   |   |   |   |   |   |   length <= 483: Binding and Uptake of Ligands by Scaveng (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   length > 483: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent V > 6.94259
+|   |   |   |   |   |   |   |   |   |   |   percent N <= 5.04202: Metabolism (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent N > 5.04202
+|   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 5.31496: Binding and Uptake of Ligands by Scaveng (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent Y > 5.31496: Extracellular matrix organization (2.0)
+|   |   |   |   |   |   |   |   length > 773
+|   |   |   |   |   |   |   |   |   percent T <= 5.01393
+|   |   |   |   |   |   |   |   |   |   percent M <= 1.6129: Extracellular matrix organization (5.0)
+|   |   |   |   |   |   |   |   |   |   percent M > 1.6129: Chromatin organization (3.0/2.0)
+|   |   |   |   |   |   |   |   |   percent T > 5.01393
+|   |   |   |   |   |   |   |   |   |   percent residue 2 <= 13.6364
+|   |   |   |   |   |   |   |   |   |   |   percent R <= 4.6595: Cell-Cell communication (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent R > 4.6595: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent residue 2 > 13.6364
+|   |   |   |   |   |   |   |   |   |   |   length <= 883: Cell-Cell communication (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   length > 883
+|   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.99301: Developmental Biology (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.99301: Cellular responses to stress (2.0)
+|   |   |   |   |   |   |   percent E > 8.32178
+|   |   |   |   |   |   |   |   percent V <= 3.82353
+|   |   |   |   |   |   |   |   |   length <= 280: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   length > 280: Extracellular matrix organization (3.0/2.0)
+|   |   |   |   |   |   |   |   percent V > 3.82353
+|   |   |   |   |   |   |   |   |   percent A <= 9.43396: Gene Expression (12.0/1.0)
+|   |   |   |   |   |   |   |   |   percent A > 9.43396: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   percent residue 1 > 12.3318
+|   |   |   |   |   |   |   mol weight <= 85679.5
+|   |   |   |   |   |   |   |   percent P <= 8.78477
+|   |   |   |   |   |   |   |   |   percent T <= 6.53686
+|   |   |   |   |   |   |   |   |   |   percent E <= 8.51064
+|   |   |   |   |   |   |   |   |   |   |   mol weight <= 63954.8
+|   |   |   |   |   |   |   |   |   |   |   |   percent E <= 4.1555
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent E <= 3.60215
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.39474: Metabolism (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.39474
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H <= 1.75055: Signal Transduction (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H > 1.75055: DNA Repair (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent E > 3.60215
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 7.71176
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 251: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 251: Extracellular matrix organization (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 7.71176
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 304: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 304: Neuronal System (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent E > 4.1555
+|   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 30
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 8.83323
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number carbon <= 785
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.06594: Cell Cycle (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.06594: Disease (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number carbon > 785
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.14973
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 3.14961
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K <= 5.31401: Immune System (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K > 5.31401
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 11: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 446
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 405: Hemostasis (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 405: Metabolism (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 446: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 3.14961: Developmental Biology (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.14973
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 2.84939
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 2.51108
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V <= 9.77778
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 3.4188
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 2.68199
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 11.1111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.85062: Gene Expression (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.85062
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 5.42169: Metabolism (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 5.42169: Cellular responses to stress (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 11.1111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 6.11205: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 6.11205: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 2.68199
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K <= 8.03859
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K <= 1.90114: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K > 1.90114: Metabolism (42.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K > 8.03859: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 3.4188: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V > 9.77778: Developmental Biology (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 2.51108: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y > 2.84939
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 13.7255
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 5.50459
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.7094
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H <= 1.81518: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H > 1.81518: Metabolism (22.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.7094
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.48584: Metabolism (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.48584
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.20354: Disease (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.20354
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 7.74807
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 3.27869
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent S <= 5.27578: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent S > 5.27578: Immune System (14.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 3.27869: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 7.74807
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 16: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 16: Metabolism (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y > 5.50459: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 13.7255: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 8.83323
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E <= 4.7619
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 2.82776: Developmental Biology (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 2.82776
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.62903: Neuronal System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.62903: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E > 4.7619
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 <= 17.3333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 3.09735: Neuronal System (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 3.09735
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mol weight <= 60275.3: Metabolism (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mol weight > 60275.3: Chromatin organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 > 17.3333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V <= 5.42169
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 2.07254: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 2.07254: Disease (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V > 5.42169
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.18919: Immune System (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.18919: DNA Repair (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 9.55975
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 9.04119: Extracellular matrix organization (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 9.04119: Metabolism (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 9.55975: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 30
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.68449
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.68509: Signal Transduction (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.68509: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.68449
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 522: Developmental Biology (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 522: Transmembrane transport of small molecul (2.0)
+|   |   |   |   |   |   |   |   |   |   |   mol weight > 63954.8
+|   |   |   |   |   |   |   |   |   |   |   |   percent S <= 7.8346
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 <= 14.9817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 637: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 637: Cellular responses to stress (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 > 14.9817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 13.1086
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number atoms <= 14016
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 610
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent S <= 7.28643: Metabolism of proteins (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent S > 7.28643: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 610
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 6.41593
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent T <= 3.75587: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent T > 3.75587: Metabolism (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 6.41593: Metabolism of proteins (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number atoms > 14016
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 5.36692: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 5.36692: Apoptosis (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 13.1086: Disease (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent S > 7.8346
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 <= 16.2376
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.39623: Signal Transduction (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.39623
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 7.07291: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 7.07291: Developmental Biology (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 > 16.2376
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 1.10193
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.8855: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.8855: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 1.10193
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 622: Metabolism of proteins (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 622: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   percent E > 8.51064
+|   |   |   |   |   |   |   |   |   |   |   percent R <= 7.55814
+|   |   |   |   |   |   |   |   |   |   |   |   percent S <= 6.86275
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent V <= 8.72483
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H <= 2.0202
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 6.79612: Disease (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 6.79612: Gene Expression (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H > 2.0202
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.54958: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.54958: Developmental Biology (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent V > 8.72483: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent S > 6.86275
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.82677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.46154
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 321: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 321: Metabolism of proteins (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 3.46154: Cell Cycle (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.82677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 7.5407: Signal Transduction (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 7.5407: DNA Repair (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent R > 7.55814
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 9: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   length <= 309
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 241: Membrane Trafficking (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 241: Metabolism of proteins (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   length > 309: Hemostasis (4.0)
+|   |   |   |   |   |   |   |   |   percent T > 6.53686
+|   |   |   |   |   |   |   |   |   |   percent F <= 2.54507
+|   |   |   |   |   |   |   |   |   |   |   number carbon <= 1801: Immune System (23.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   number carbon > 1801: Disease (5.0)
+|   |   |   |   |   |   |   |   |   |   percent F > 2.54507
+|   |   |   |   |   |   |   |   |   |   |   percent residue 2 <= 16.1137
+|   |   |   |   |   |   |   |   |   |   |   |   percent H <= 1.46444: Cellular responses to stress (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent H > 1.46444: Binding and Uptake of Ligands by Scaveng (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent residue 2 > 16.1137
+|   |   |   |   |   |   |   |   |   |   |   |   percent M <= 3.09051
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 3.66089: Metabolism (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 3.66089: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent M > 3.09051: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   percent P > 8.78477
+|   |   |   |   |   |   |   |   |   percent A <= 14.1667
+|   |   |   |   |   |   |   |   |   |   percent R <= 8.06122
+|   |   |   |   |   |   |   |   |   |   |   percent S <= 8.46154
+|   |   |   |   |   |   |   |   |   |   |   |   percent S <= 8.1042
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent T <= 3.97727
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 2.54237: Cellular responses to stress (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 2.54237: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent T > 3.97727
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 11.4469
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 2.83019: Immune System (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 2.83019
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.87691: Disease (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.87691: Immune System (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 26: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 11.4469: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent S > 8.1042
+|   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.35149: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.35149: Cell-Cell communication (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent S > 8.46154
+|   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 2.21445
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 7.82123: Cell Cycle (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 7.82123
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 9.01857
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.13507: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.13507: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 9.01857: Cellular responses to stress (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent Y > 2.21445
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 7.67123
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 462: Hemostasis (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 462
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 <= 18.172: Signal Transduction (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 > 18.172: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 7.67123: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   percent R > 8.06122
+|   |   |   |   |   |   |   |   |   |   |   percent Y <= 1.12994: Signal Transduction (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent Y > 1.12994
+|   |   |   |   |   |   |   |   |   |   |   |   percent H <= 1.64706: Extracellular matrix organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent H > 1.64706: Disease (7.0)
+|   |   |   |   |   |   |   |   |   percent A > 14.1667
+|   |   |   |   |   |   |   |   |   |   percent I <= 1.23153: Developmental Biology (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent I > 1.23153: Signal Transduction (4.0/1.0)
+|   |   |   |   |   |   |   mol weight > 85679.5
+|   |   |   |   |   |   |   |   percent D <= 6.23701
+|   |   |   |   |   |   |   |   |   percent K <= 3.24484
+|   |   |   |   |   |   |   |   |   |   number sulphur <= 50
+|   |   |   |   |   |   |   |   |   |   |   percent A <= 9.58904
+|   |   |   |   |   |   |   |   |   |   |   |   percent S <= 8.35031
+|   |   |   |   |   |   |   |   |   |   |   |   |   length <= 853: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   length > 853: Extracellular matrix organization (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent S > 8.35031
+|   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 36: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 36: Neuronal System (4.0)
+|   |   |   |   |   |   |   |   |   |   |   percent A > 9.58904
+|   |   |   |   |   |   |   |   |   |   |   |   length <= 989: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   length > 989: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   number sulphur > 50
+|   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.90435
+|   |   |   |   |   |   |   |   |   |   |   |   length <= 1065: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   length > 1065: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.90435
+|   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.53258: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.53258: Developmental Biology (3.0)
+|   |   |   |   |   |   |   |   |   percent K > 3.24484
+|   |   |   |   |   |   |   |   |   |   percent R <= 4.43925
+|   |   |   |   |   |   |   |   |   |   |   percent E <= 6.70578
+|   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.02685: Transmembrane transport of small molecul (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.02685: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent E > 6.70578
+|   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.89796: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.89796: Hemostasis (4.0)
+|   |   |   |   |   |   |   |   |   |   percent R > 4.43925
+|   |   |   |   |   |   |   |   |   |   |   percent H <= 1.62749
+|   |   |   |   |   |   |   |   |   |   |   |   length <= 970
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.67112: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.67112: Gene Expression (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   length > 970
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.22592: Binding and Uptake of Ligands by Scaveng (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.22592: Hemostasis (3.0)
+|   |   |   |   |   |   |   |   |   |   |   percent H > 1.62749
+|   |   |   |   |   |   |   |   |   |   |   |   percent T <= 5.76071
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.28148
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 7.84447
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 5.13308: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 5.13308: Developmental Biology (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 7.84447: Hemostasis (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.28148
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.43975
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 6.78261
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.25532: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.25532: Gene Expression (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 6.78261
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 6.98795: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 6.98795: Metabolism of proteins (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.43975
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.5641
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 1.49254
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 1.95312: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 1.95312: Cell Cycle (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 1.49254
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 1.0846
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.25806: Signal Transduction (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.25806: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 1.0846
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 6.6432
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 1342: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 1342: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 6.6432: Immune System (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.5641
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H <= 2.11082: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent H > 2.11082
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.92237: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.92237: Hemostasis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent T > 5.76071
+|   |   |   |   |   |   |   |   |   |   |   |   |   number oxygen <= 2725
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   number oxygen <= 2147: Gene Expression (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   number oxygen > 2147
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mol weight <= 101850: Chromatin organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mol weight > 101850: Neuronal System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   number oxygen > 2725
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K <= 4.41176: Cell-Cell communication (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K > 4.41176: Developmental Biology (5.0/1.0)
+|   |   |   |   |   |   |   |   percent D > 6.23701
+|   |   |   |   |   |   |   |   |   percent H <= 2.38365
+|   |   |   |   |   |   |   |   |   |   percent G <= 11.828
+|   |   |   |   |   |   |   |   |   |   |   percent C <= 1.21951: Cell-Cell communication (6.0)
+|   |   |   |   |   |   |   |   |   |   |   percent C > 1.21951
+|   |   |   |   |   |   |   |   |   |   |   |   percent E <= 6.2766: Cell-Cell communication (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent E > 6.2766: Gene Expression (4.0)
+|   |   |   |   |   |   |   |   |   |   percent G > 11.828: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent H > 2.38365
+|   |   |   |   |   |   |   |   |   |   length <= 1173: Immune System (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   length > 1173: Cellular responses to stress (2.0/1.0)
+|   |   |   |   percent T > 7.38636
+|   |   |   |   |   length <= 433
+|   |   |   |   |   |   percent Q <= 5.8651
+|   |   |   |   |   |   |   percent C <= 1.09204
+|   |   |   |   |   |   |   |   length <= 226: Metabolism (4.0/1.0)
+|   |   |   |   |   |   |   |   length > 226: Hemostasis (3.0/1.0)
+|   |   |   |   |   |   |   percent C > 1.09204
+|   |   |   |   |   |   |   |   percent D <= 6.40244
+|   |   |   |   |   |   |   |   |   percent W <= 1.47601
+|   |   |   |   |   |   |   |   |   |   mol weight <= 41310.5
+|   |   |   |   |   |   |   |   |   |   |   percent H <= 2.59244: Immune System (3.0)
+|   |   |   |   |   |   |   |   |   |   |   percent H > 2.59244: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   mol weight > 41310.5
+|   |   |   |   |   |   |   |   |   |   |   mol weight <= 42990.4: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   mol weight > 42990.4: Cell-Cell communication (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent W > 1.47601
+|   |   |   |   |   |   |   |   |   |   percent N <= 1.09589: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent N > 1.09589: Immune System (43.0/1.0)
+|   |   |   |   |   |   |   |   percent D > 6.40244
+|   |   |   |   |   |   |   |   |   percent G <= 7.55064: Gene Expression (4.0)
+|   |   |   |   |   |   |   |   |   percent G > 7.55064: Immune System (2.0)
+|   |   |   |   |   |   percent Q > 5.8651
+|   |   |   |   |   |   |   number sulphur <= 10
+|   |   |   |   |   |   |   |   percent D <= 4.91525: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   percent D > 4.91525: Cell Cycle (2.0)
+|   |   |   |   |   |   |   number sulphur > 10
+|   |   |   |   |   |   |   |   percent C <= 1.63043: Disease (15.0)
+|   |   |   |   |   |   |   |   percent C > 1.63043: Immune System (2.0)
+|   |   |   |   |   length > 433
+|   |   |   |   |   |   percent S <= 8.18859
+|   |   |   |   |   |   |   percent A <= 8.46561
+|   |   |   |   |   |   |   |   theortical pI <= 8.88864
+|   |   |   |   |   |   |   |   |   percent K <= 6.60066
+|   |   |   |   |   |   |   |   |   |   percent D <= 5.6338: Extracellular matrix organization (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent D > 5.6338: Cell-Cell communication (8.0/1.0)
+|   |   |   |   |   |   |   |   |   percent K > 6.60066: Hemostasis (3.0/1.0)
+|   |   |   |   |   |   |   |   theortical pI > 8.88864: Signal Transduction (3.0)
+|   |   |   |   |   |   |   percent A > 8.46561: Developmental Biology (4.0/1.0)
+|   |   |   |   |   |   percent S > 8.18859
+|   |   |   |   |   |   |   percent E <= 6.88406
+|   |   |   |   |   |   |   |   percent N <= 3.45304: Chromatin organization (3.0)
+|   |   |   |   |   |   |   |   percent N > 3.45304
+|   |   |   |   |   |   |   |   |   length <= 958: Immune System (4.0)
+|   |   |   |   |   |   |   |   |   length > 958: Cell-Cell communication (3.0/1.0)
+|   |   |   |   |   |   |   percent E > 6.88406
+|   |   |   |   |   |   |   |   percent V <= 6.51685: Disease (4.0/1.0)
+|   |   |   |   |   |   |   |   percent V > 6.51685
+|   |   |   |   |   |   |   |   |   percent K <= 6.19469: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent K > 6.19469: Developmental Biology (2.0)
+|   |   |   percent C > 4.06504
+|   |   |   |   percent F <= 2.39852
+|   |   |   |   |   percent C <= 4.91803
+|   |   |   |   |   |   percent A <= 8.86525: Extracellular matrix organization (3.0/1.0)
+|   |   |   |   |   |   percent A > 8.86525: Cell-Cell communication (3.0/2.0)
+|   |   |   |   |   percent C > 4.91803
+|   |   |   |   |   |   percent L <= 11.7057
+|   |   |   |   |   |   |   percent residue 1 <= 12.7119
+|   |   |   |   |   |   |   |   percent R <= 4.65116: Disease (2.0)
+|   |   |   |   |   |   |   |   percent R > 4.65116: Metabolism (2.0)
+|   |   |   |   |   |   |   percent residue 1 > 12.7119
+|   |   |   |   |   |   |   |   percent P <= 6.74646: Signal Transduction (6.0/1.0)
+|   |   |   |   |   |   |   |   percent P > 6.74646
+|   |   |   |   |   |   |   |   |   percent Q <= 3.52423: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent Q > 3.52423: Metabolism of proteins (12.0)
+|   |   |   |   |   |   percent L > 11.7057
+|   |   |   |   |   |   |   percent E <= 4.50886: Hemostasis (3.0/1.0)
+|   |   |   |   |   |   |   percent E > 4.50886: Disease (3.0/1.0)
+|   |   |   |   percent F > 2.39852
+|   |   |   |   |   percent W <= 1.09019
+|   |   |   |   |   |   number carbon <= 1773
+|   |   |   |   |   |   |   theortical pI <= 7.87107
+|   |   |   |   |   |   |   |   percent A <= 6.88623: Disease (2.0)
+|   |   |   |   |   |   |   |   percent A > 6.88623: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   theortical pI > 7.87107: DNA Repair (3.0/2.0)
+|   |   |   |   |   |   number carbon > 1773
+|   |   |   |   |   |   |   percent K <= 4.60405
+|   |   |   |   |   |   |   |   percent N <= 2: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   |   percent N > 2
+|   |   |   |   |   |   |   |   |   percent C <= 5.86826: Cell-Cell communication (4.0/1.0)
+|   |   |   |   |   |   |   |   |   percent C > 5.86826: Extracellular matrix organization (11.0)
+|   |   |   |   |   |   |   percent K > 4.60405
+|   |   |   |   |   |   |   |   percent residue 2 <= 18.5185
+|   |   |   |   |   |   |   |   |   percent G <= 7.87037: Developmental Biology (9.0/1.0)
+|   |   |   |   |   |   |   |   |   percent G > 7.87037
+|   |   |   |   |   |   |   |   |   |   percent Q <= 4.22078: Extracellular matrix organization (4.0)
+|   |   |   |   |   |   |   |   |   |   percent Q > 4.22078: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   percent residue 2 > 18.5185: Cell Cycle (3.0/2.0)
+|   |   |   |   |   percent W > 1.09019
+|   |   |   |   |   |   number oxygen <= 610
+|   |   |   |   |   |   |   length <= 237: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   length > 237: Cell-Cell communication (2.0)
+|   |   |   |   |   |   number oxygen > 610
+|   |   |   |   |   |   |   percent A <= 5.17578
+|   |   |   |   |   |   |   |   percent I <= 4.88889
+|   |   |   |   |   |   |   |   |   percent C <= 6.66667: Immune System (9.0/1.0)
+|   |   |   |   |   |   |   |   |   percent C > 6.66667: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   percent I > 4.88889: Hemostasis (4.0/1.0)
+|   |   |   |   |   |   |   percent A > 5.17578
+|   |   |   |   |   |   |   |   percent T <= 6.55738
+|   |   |   |   |   |   |   |   |   number sulphur <= 48
+|   |   |   |   |   |   |   |   |   |   percent N <= 3.42466
+|   |   |   |   |   |   |   |   |   |   |   length <= 464: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   length > 464: Hemostasis (3.0)
+|   |   |   |   |   |   |   |   |   |   percent N > 3.42466
+|   |   |   |   |   |   |   |   |   |   |   percent G <= 9.84183
+|   |   |   |   |   |   |   |   |   |   |   |   percent K <= 5.74713: Immune System (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent K > 5.74713: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent G > 9.84183: Extracellular matrix organization (2.0)
+|   |   |   |   |   |   |   |   |   number sulphur > 48
+|   |   |   |   |   |   |   |   |   |   percent R <= 6.08828: Disease (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent R > 6.08828
+|   |   |   |   |   |   |   |   |   |   |   percent C <= 7.86517: Extracellular matrix organization (7.0)
+|   |   |   |   |   |   |   |   |   |   |   percent C > 7.86517: Disease (2.0)
+|   |   |   |   |   |   |   |   percent T > 6.55738
+|   |   |   |   |   |   |   |   |   percent I <= 4.41176: Binding and Uptake of Ligands by Scaveng (3.0)
+|   |   |   |   |   |   |   |   |   percent I > 4.41176: Disease (3.0/1.0)
+|   |   percent P > 14.7679
+|   |   |   percent G <= 13.3829
+|   |   |   |   percent E <= 5.97345
+|   |   |   |   |   number sulphur <= 15: Developmental Biology (3.0)
+|   |   |   |   |   number sulphur > 15: Signal Transduction (4.0)
+|   |   |   |   percent E > 5.97345
+|   |   |   |   |   length <= 241: Apoptosis (2.0/1.0)
+|   |   |   |   |   length > 241
+|   |   |   |   |   |   percent L <= 7.76699: Hemostasis (2.0)
+|   |   |   |   |   |   percent L > 7.76699: Cellular responses to stress (4.0)
+|   |   |   percent G > 13.3829
+|   |   |   |   percent L <= 3.37079: Binding and Uptake of Ligands by Scaveng (2.0)
+|   |   |   |   percent L > 3.37079
+|   |   |   |   |   number sulphur <= 22: Extracellular matrix organization (9.0/1.0)
+|   |   |   |   |   number sulphur > 22
+|   |   |   |   |   |   percent H <= 0.932401: Developmental Biology (4.0)
+|   |   |   |   |   |   percent H > 0.932401
+|   |   |   |   |   |   |   percent L <= 6.07375
+|   |   |   |   |   |   |   |   length <= 1698: Developmental Biology (3.0)
+|   |   |   |   |   |   |   |   length > 1698: Extracellular matrix organization (2.0)
+|   |   |   |   |   |   |   percent L > 6.07375: Extracellular matrix organization (11.0)
+|   percent F > 4.03509
+|   |   percent E <= 4.51128
+|   |   |   number atoms <= 4838
+|   |   |   |   percent H <= 4.41989
+|   |   |   |   |   percent K <= 8.33333
+|   |   |   |   |   |   percent L <= 12.1019
+|   |   |   |   |   |   |   percent D <= 2.8436: Metabolism (3.0/1.0)
+|   |   |   |   |   |   |   percent D > 2.8436: Immune System (13.0/2.0)
+|   |   |   |   |   |   percent L > 12.1019
+|   |   |   |   |   |   |   percent C <= 3.53357
+|   |   |   |   |   |   |   |   theortical pI <= 8.6496: Metabolism (2.0)
+|   |   |   |   |   |   |   |   theortical pI > 8.6496: Metabolism of proteins (3.0)
+|   |   |   |   |   |   |   percent C > 3.53357: Cell-Cell communication (4.0/1.0)
+|   |   |   |   |   percent K > 8.33333: Disease (2.0)
+|   |   |   |   percent H > 4.41989
+|   |   |   |   |   percent N <= 2.80778: Cell Cycle (2.0)
+|   |   |   |   |   percent N > 2.80778: Disease (2.0/1.0)
+|   |   |   number atoms > 4838
+|   |   |   |   percent C <= 2.64317
+|   |   |   |   |   percent G <= 4.33437
+|   |   |   |   |   |   percent D <= 4.5082: Signal Transduction (10.0/1.0)
+|   |   |   |   |   |   percent D > 4.5082: Neuronal System (5.0)
+|   |   |   |   |   percent G > 4.33437
+|   |   |   |   |   |   percent S <= 9.80036
+|   |   |   |   |   |   |   percent H <= 1.44928
+|   |   |   |   |   |   |   |   percent R <= 5.87691
+|   |   |   |   |   |   |   |   |   theortical pI <= 9.14649: Transmembrane transport of small molecul (16.0/2.0)
+|   |   |   |   |   |   |   |   |   theortical pI > 9.14649: Disease (2.0)
+|   |   |   |   |   |   |   |   percent R > 5.87691
+|   |   |   |   |   |   |   |   |   length <= 423: Metabolism of proteins (3.0/1.0)
+|   |   |   |   |   |   |   |   |   length > 423: Hemostasis (3.0/2.0)
+|   |   |   |   |   |   |   percent H > 1.44928
+|   |   |   |   |   |   |   |   percent G <= 10.1635
+|   |   |   |   |   |   |   |   |   percent M <= 3.02691
+|   |   |   |   |   |   |   |   |   |   percent E <= 4.3659
+|   |   |   |   |   |   |   |   |   |   |   percent L <= 15.8974
+|   |   |   |   |   |   |   |   |   |   |   |   percent H <= 2.59244
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 3.73444
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.03514: Neuronal System (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.03514
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.65449: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.65449: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 3.73444
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 6.94864: Disease (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 6.94864: Metabolism (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent H > 2.59244
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 5.37634: Disease (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 5.37634
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 9.4165
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.13333: Metabolism (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.13333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.5248: Metabolism (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.5248: Metabolism of proteins (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 9.4165: Disease (4.0)
+|   |   |   |   |   |   |   |   |   |   |   percent L > 15.8974
+|   |   |   |   |   |   |   |   |   |   |   |   percent D <= 2.80899: Metabolism of proteins (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent D > 2.80899: Hemostasis (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   percent E > 4.3659
+|   |   |   |   |   |   |   |   |   |   |   percent G <= 8.9172: Immune System (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent G > 8.9172: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   percent M > 3.02691
+|   |   |   |   |   |   |   |   |   |   percent Q <= 4.96324
+|   |   |   |   |   |   |   |   |   |   |   percent H <= 1.90736
+|   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.05565: Neuronal System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.05565: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent H > 1.90736
+|   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 2.83019: Transmembrane transport of small molecul (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent Y > 2.83019: Metabolism (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent Q > 4.96324: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   percent G > 10.1635
+|   |   |   |   |   |   |   |   |   percent R <= 4.45449: Transmembrane transport of small molecul (4.0)
+|   |   |   |   |   |   |   |   |   percent R > 4.45449: Disease (4.0/1.0)
+|   |   |   |   |   |   percent S > 9.80036
+|   |   |   |   |   |   |   percent P <= 7.33945
+|   |   |   |   |   |   |   |   percent D <= 4.16947
+|   |   |   |   |   |   |   |   |   length <= 509: Disease (2.0)
+|   |   |   |   |   |   |   |   |   length > 509: Metabolism (2.0)
+|   |   |   |   |   |   |   |   percent D > 4.16947: Neuronal System (3.0)
+|   |   |   |   |   |   |   percent P > 7.33945
+|   |   |   |   |   |   |   |   mol weight <= 58564: Immune System (4.0)
+|   |   |   |   |   |   |   |   mol weight > 58564: Membrane Trafficking (3.0/1.0)
+|   |   |   |   percent C > 2.64317
+|   |   |   |   |   percent S <= 6.28183
+|   |   |   |   |   |   percent P <= 4.81283
+|   |   |   |   |   |   |   percent N <= 4.12844: Metabolism (8.0/1.0)
+|   |   |   |   |   |   |   percent N > 4.12844: Disease (3.0/2.0)
+|   |   |   |   |   |   percent P > 4.81283
+|   |   |   |   |   |   |   number sulphur <= 19: Signal Transduction (2.0)
+|   |   |   |   |   |   |   number sulphur > 19: Metabolism of proteins (7.0)
+|   |   |   |   |   percent S > 6.28183
+|   |   |   |   |   |   percent D <= 1.55039
+|   |   |   |   |   |   |   length <= 386: Metabolism (2.0/1.0)
+|   |   |   |   |   |   |   length > 386: Metabolism of proteins (2.0)
+|   |   |   |   |   |   percent D > 1.55039
+|   |   |   |   |   |   |   percent L <= 7.98319: Disease (3.0/2.0)
+|   |   |   |   |   |   |   percent L > 7.98319
+|   |   |   |   |   |   |   |   number sulphur <= 32
+|   |   |   |   |   |   |   |   |   percent H <= 4.18994
+|   |   |   |   |   |   |   |   |   |   percent G <= 6.88: Signal Transduction (58.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent G > 6.88
+|   |   |   |   |   |   |   |   |   |   |   percent G <= 8.09647: Metabolism (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent G > 8.09647: Signal Transduction (5.0)
+|   |   |   |   |   |   |   |   |   percent H > 4.18994: Metabolism (3.0)
+|   |   |   |   |   |   |   |   number sulphur > 32
+|   |   |   |   |   |   |   |   |   percent V <= 7.33333
+|   |   |   |   |   |   |   |   |   |   number sulphur <= 36: Transmembrane transport of small molecul (2.0)
+|   |   |   |   |   |   |   |   |   |   number sulphur > 36: Signal Transduction (5.0)
+|   |   |   |   |   |   |   |   |   percent V > 7.33333: Metabolism (4.0/1.0)
+|   |   percent E > 4.51128
+|   |   |   number nitrogen <= 1083
+|   |   |   |   length <= 306
+|   |   |   |   |   percent G <= 3.38542
+|   |   |   |   |   |   percent Q <= 5.19054: Immune System (6.0/1.0)
+|   |   |   |   |   |   percent Q > 5.19054
+|   |   |   |   |   |   |   length <= 200: Hemostasis (13.0/1.0)
+|   |   |   |   |   |   |   length > 200: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   percent G > 3.38542
+|   |   |   |   |   |   percent residue 2 <= 21.519
+|   |   |   |   |   |   |   percent K <= 4.14201
+|   |   |   |   |   |   |   |   number oxygen <= 597
+|   |   |   |   |   |   |   |   |   percent Q <= 3.86965: Cellular responses to stress (4.0/1.0)
+|   |   |   |   |   |   |   |   |   percent Q > 3.86965: Apoptosis (3.0)
+|   |   |   |   |   |   |   |   number oxygen > 597
+|   |   |   |   |   |   |   |   |   percent N <= 2.38095: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent N > 2.38095
+|   |   |   |   |   |   |   |   |   |   percent W <= 1.3289: Extracellular matrix organization (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent W > 1.3289: Immune System (25.0)
+|   |   |   |   |   |   |   percent K > 4.14201
+|   |   |   |   |   |   |   |   number atoms <= 3417
+|   |   |   |   |   |   |   |   |   percent L <= 8.23755
+|   |   |   |   |   |   |   |   |   |   theortical pI <= 6.20349: Apoptosis (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   theortical pI > 6.20349: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   percent L > 8.23755: Immune System (9.0)
+|   |   |   |   |   |   |   |   number atoms > 3417
+|   |   |   |   |   |   |   |   |   theortical pI <= 5.06655
+|   |   |   |   |   |   |   |   |   |   percent M <= 1.47059: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent M > 1.47059
+|   |   |   |   |   |   |   |   |   |   |   percent D <= 6.74847
+|   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 4.85323: Gene Expression (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 4.85323: Immune System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent D > 6.74847: Disease (6.0/1.0)
+|   |   |   |   |   |   |   |   |   theortical pI > 5.06655
+|   |   |   |   |   |   |   |   |   |   percent P <= 6.91489
+|   |   |   |   |   |   |   |   |   |   |   percent R <= 5.90909
+|   |   |   |   |   |   |   |   |   |   |   |   length <= 190
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 5.05051: Cellular responses to stress (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 5.05051: Hemostasis (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   length > 190
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 0.416667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 8.41889: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 8.41889: Metabolism (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 0.416667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 3.06905
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 8.01034
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 3.76884
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 <= 14.1066
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 3.27869: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y > 3.27869: Hemostasis (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 > 14.1066
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 3.42857: Apoptosis (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 3.42857: Metabolism (26.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 3.76884
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.4335: Hemostasis (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.4335: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 8.01034: Apoptosis (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 3.06905: Apoptosis (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent R > 5.90909
+|   |   |   |   |   |   |   |   |   |   |   |   percent W <= 2.08883
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 0.682012: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 0.682012: Disease (11.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent W > 2.08883
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 5.37383: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 5.37383
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 7.27273: Membrane Trafficking (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 7.27273: Metabolism of proteins (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent P > 6.91489
+|   |   |   |   |   |   |   |   |   |   |   percent F <= 5.14286
+|   |   |   |   |   |   |   |   |   |   |   |   percent D <= 6.38298
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.35602: Metabolism (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.35602: Developmental Biology (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent D > 6.38298: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent F > 5.14286
+|   |   |   |   |   |   |   |   |   |   |   |   length <= 248: Cellular responses to stress (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   length > 248: Disease (3.0/2.0)
+|   |   |   |   |   |   percent residue 2 > 21.519
+|   |   |   |   |   |   |   percent A <= 6.0307
+|   |   |   |   |   |   |   |   number sulphur <= 8: Disease (2.0)
+|   |   |   |   |   |   |   |   number sulphur > 8: Immune System (6.0/2.0)
+|   |   |   |   |   |   |   percent A > 6.0307
+|   |   |   |   |   |   |   |   percent I <= 2.72953: Cell-Cell communication (4.0/3.0)
+|   |   |   |   |   |   |   |   percent I > 2.72953
+|   |   |   |   |   |   |   |   |   length <= 283
+|   |   |   |   |   |   |   |   |   |   theortical pI <= 9.21533: Metabolism (6.0)
+|   |   |   |   |   |   |   |   |   |   theortical pI > 9.21533: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   |   |   length > 283: Cell Cycle (3.0)
+|   |   |   |   length > 306
+|   |   |   |   |   percent residue 1 <= 11.8938
+|   |   |   |   |   |   percent A <= 5.42169
+|   |   |   |   |   |   |   percent V <= 5.09804: Binding and Uptake of Ligands by Scaveng (2.0/1.0)
+|   |   |   |   |   |   |   percent V > 5.09804
+|   |   |   |   |   |   |   |   percent F <= 4.27807: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   percent F > 4.27807
+|   |   |   |   |   |   |   |   |   percent S <= 5.92992: Hemostasis (3.0)
+|   |   |   |   |   |   |   |   |   percent S > 5.92992: Immune System (5.0/1.0)
+|   |   |   |   |   |   percent A > 5.42169
+|   |   |   |   |   |   |   percent E <= 4.77454: Cellular responses to stress (3.0/2.0)
+|   |   |   |   |   |   |   percent E > 4.77454
+|   |   |   |   |   |   |   |   percent I <= 3.62903
+|   |   |   |   |   |   |   |   |   number sulphur <= 20: Gene Expression (4.0/1.0)
+|   |   |   |   |   |   |   |   |   number sulphur > 20: Extracellular matrix organization (2.0)
+|   |   |   |   |   |   |   |   percent I > 3.62903
+|   |   |   |   |   |   |   |   |   percent F <= 4.21394: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent F > 4.21394
+|   |   |   |   |   |   |   |   |   |   percent V <= 4.80349: Extracellular matrix organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent V > 4.80349: Metabolism (20.0/1.0)
+|   |   |   |   |   percent residue 1 > 11.8938
+|   |   |   |   |   |   percent S <= 8.81057
+|   |   |   |   |   |   |   percent D <= 6.38978
+|   |   |   |   |   |   |   |   percent D <= 3.18182
+|   |   |   |   |   |   |   |   |   percent L <= 9.41704
+|   |   |   |   |   |   |   |   |   |   percent A <= 7.69231: Neuronal System (2.0)
+|   |   |   |   |   |   |   |   |   |   percent A > 7.69231: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent L > 9.41704
+|   |   |   |   |   |   |   |   |   |   percent R <= 2.6971: Hemostasis (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent R > 2.6971
+|   |   |   |   |   |   |   |   |   |   |   number sulphur <= 27
+|   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.03797
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.21064: Transmembrane transport of small molecul (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.21064: Signal Transduction (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent Q > 3.03797
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 0.934579: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 0.934579
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 6.30081: Metabolism (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 6.30081
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 3.60885: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 3.60885: Disease (5.0)
+|   |   |   |   |   |   |   |   |   |   |   number sulphur > 27
+|   |   |   |   |   |   |   |   |   |   |   |   percent W <= 2.22222: Transmembrane transport of small molecul (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent W > 2.22222: Signal Transduction (6.0)
+|   |   |   |   |   |   |   |   percent D > 3.18182
+|   |   |   |   |   |   |   |   |   percent W <= 0.614912
+|   |   |   |   |   |   |   |   |   |   percent T <= 6.33397
+|   |   |   |   |   |   |   |   |   |   |   percent D <= 5.26459
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 39
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 5.31915
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.00782: Metabolism (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.00782
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.59259: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.59259: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 5.31915: Metabolism (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 39: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent D > 5.26459
+|   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.92493
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.30303: Signal Transduction (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.30303: Chromatin organization (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.92493
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 5.88235: Membrane Trafficking (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 5.88235: Hemostasis (3.0)
+|   |   |   |   |   |   |   |   |   |   percent T > 6.33397
+|   |   |   |   |   |   |   |   |   |   |   theortical pI <= 7.70086
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.55731: Membrane Trafficking (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 3.55731: Cell Cycle (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 26: Transmembrane transport of small molecul (2.0)
+|   |   |   |   |   |   |   |   |   |   |   theortical pI > 7.70086: Cellular responses to stress (3.0/2.0)
+|   |   |   |   |   |   |   |   |   percent W > 0.614912
+|   |   |   |   |   |   |   |   |   |   percent E <= 7.65027
+|   |   |   |   |   |   |   |   |   |   |   percent C <= 3.10345
+|   |   |   |   |   |   |   |   |   |   |   |   percent T <= 6.77857
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 4.51977
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 14.4269
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number atoms <= 13973
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V <= 8.90411
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K <= 7.09677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 2.85171
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.13808: Neuronal System (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.13808
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.14478
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 7.52475: Neuronal System (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 7.52475: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.14478: Metabolism (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 2.85171
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 10: Disease (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 8.24524
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 4.5283
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 1.77515: Transmembrane transport of small molecul (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 1.77515: Metabolism (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 4.5283
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.8565
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 5.03834
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 484: Metabolism (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 484: Disease (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 5.03834
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 24: Neuronal System (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 24: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.8565
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number nitrogen <= 971
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y <= 4.72727
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 1.3913: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 1.3913
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 5.35332
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 6.25: Metabolism (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 6.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.37678: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.37678: Metabolism (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 5.35332: Metabolism (27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V <= 6.9378
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 587
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 3.50195: Metabolism (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 3.50195: Neuronal System (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 587: Metabolism of proteins (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V > 6.9378: Metabolism (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Y > 4.72727
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.22812: Metabolism (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.22812: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number nitrogen > 971: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 8.24524: Disease (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K > 7.09677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.93359
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E <= 6.66667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.08791: Metabolism (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.08791: Metabolism of proteins (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E > 6.66667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.23077: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.23077: Immune System (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.93359
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 5.6383: Cell Cycle (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 5.6383: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent V > 8.90411
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 4.32432: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 4.32432: Neuronal System (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number atoms > 13973
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.39893: Transmembrane transport of small molecul (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 3.39893: Metabolism (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 14.4269
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.28141: Cell Cycle (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.28141: DNA Repair (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 4.51977
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 <= 14.6175: Immune System (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 > 14.6175
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.91956: Metabolism of proteins (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.91956
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 1.31579: Metabolism (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 1.31579
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.49241
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.62585
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 6.22711: Metabolism (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 6.22711: Metabolism of proteins (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.62585
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 4.7532: Metabolism of proteins (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 4.7532
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 2.00267: Metabolism of proteins (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 2.00267: Disease (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.49241
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.52899: Metabolism (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.52899: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 25: Neuronal System (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent T > 6.77857
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent S <= 5.32081: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent S > 5.32081: Neuronal System (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent C > 3.10345
+|   |   |   |   |   |   |   |   |   |   |   |   percent F <= 5.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 6.61376
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 4.01891
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 563: DNA Repair (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 563: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 4.01891: Immune System (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 6.61376: Metabolism (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent F > 5.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent T <= 5.23627
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W <= 2.05128: Neuronal System (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent W > 2.05128: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent T > 5.23627
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A <= 5.24862: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent A > 5.24862: Signal Transduction (5.0)
+|   |   |   |   |   |   |   |   |   |   percent E > 7.65027
+|   |   |   |   |   |   |   |   |   |   |   percent K <= 5.20833
+|   |   |   |   |   |   |   |   |   |   |   |   percent P <= 5.92275
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent F <= 4.75113: Metabolism (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent F > 4.75113: Neuronal System (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent P > 5.92275
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent S <= 5.3528: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent S > 5.3528: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent K > 5.20833
+|   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 <= 18.1818
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.26415
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 <= 14.9184: Cellular responses to stress (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent residue 2 > 14.9184
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N <= 4.52675
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G <= 5.97954
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent T <= 4.51807: Disease (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent T > 4.51807: Membrane Trafficking (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent G > 5.97954
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 472
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C <= 0.665557: Cell Cycle (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 0.665557: Metabolism (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 472
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 5.05226: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 5.05226: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent N > 4.52675
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K <= 6.36704: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent K > 6.36704: Hemostasis (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.26415
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 9.38416: Immune System (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 9.38416
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 7.22911: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 7.22911: Signal Transduction (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent residue 1 > 18.1818
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 5.72391: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 5.72391: Metabolism of proteins (2.0)
+|   |   |   |   |   |   |   percent D > 6.38978
+|   |   |   |   |   |   |   |   theortical pI <= 5.15201
+|   |   |   |   |   |   |   |   |   percent L <= 9.41704
+|   |   |   |   |   |   |   |   |   |   length <= 615: Signal Transduction (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   length > 615: Cell-Cell communication (3.0)
+|   |   |   |   |   |   |   |   |   percent L > 9.41704
+|   |   |   |   |   |   |   |   |   |   length <= 420: Transmembrane transport of small molecul (2.0)
+|   |   |   |   |   |   |   |   |   |   length > 420: Apoptosis (3.0/2.0)
+|   |   |   |   |   |   |   |   theortical pI > 5.15201
+|   |   |   |   |   |   |   |   |   percent D <= 7.82918
+|   |   |   |   |   |   |   |   |   |   percent M <= 2.27273
+|   |   |   |   |   |   |   |   |   |   |   percent S <= 6.00522
+|   |   |   |   |   |   |   |   |   |   |   |   percent H <= 1.97461: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent H > 1.97461: Metabolism of proteins (4.0)
+|   |   |   |   |   |   |   |   |   |   |   percent S > 6.00522
+|   |   |   |   |   |   |   |   |   |   |   |   percent A <= 5.56522
+|   |   |   |   |   |   |   |   |   |   |   |   |   length <= 575: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   length > 575: Cellular responses to stress (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent A > 5.56522
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 11.8527: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 11.8527: Cell Cycle (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent M > 2.27273
+|   |   |   |   |   |   |   |   |   |   |   percent I <= 4.99325
+|   |   |   |   |   |   |   |   |   |   |   |   percent E <= 7.93826
+|   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur <= 27: Metabolism (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   number sulphur > 27: Cell Cycle (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent E > 7.93826: Gene Expression (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   percent I > 4.99325
+|   |   |   |   |   |   |   |   |   |   |   |   percent R <= 4.88722
+|   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 5.36992: Immune System (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 5.36992: Disease (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent R > 4.88722
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent M <= 3.10345
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E <= 6.21118: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent E > 6.21118: Hemostasis (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent M > 3.10345: Cell-Cell communication (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent D > 7.82918
+|   |   |   |   |   |   |   |   |   |   percent E <= 7.30435
+|   |   |   |   |   |   |   |   |   |   |   length <= 398: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   |   |   length > 398: Disease (2.0)
+|   |   |   |   |   |   |   |   |   |   percent E > 7.30435: Neuronal System (3.0)
+|   |   |   |   |   |   percent S > 8.81057
+|   |   |   |   |   |   |   number sulphur <= 17
+|   |   |   |   |   |   |   |   percent R <= 6.06061
+|   |   |   |   |   |   |   |   |   percent K <= 5.34188: Immune System (11.0/2.0)
+|   |   |   |   |   |   |   |   |   percent K > 5.34188
+|   |   |   |   |   |   |   |   |   |   theortical pI <= 8.76942: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   theortical pI > 8.76942: Membrane Trafficking (3.0/1.0)
+|   |   |   |   |   |   |   |   percent R > 6.06061: Apoptosis (3.0/2.0)
+|   |   |   |   |   |   |   number sulphur > 17
+|   |   |   |   |   |   |   |   percent N <= 4.42478
+|   |   |   |   |   |   |   |   |   theortical pI <= 5.72991
+|   |   |   |   |   |   |   |   |   |   percent R <= 4.74383: Metabolism (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent R > 4.74383: Neuronal System (3.0/1.0)
+|   |   |   |   |   |   |   |   |   theortical pI > 5.72991
+|   |   |   |   |   |   |   |   |   |   percent Q <= 4.60251
+|   |   |   |   |   |   |   |   |   |   |   percent C <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   percent V <= 5.64854: Gene Expression (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent V > 5.64854: Neuronal System (11.0)
+|   |   |   |   |   |   |   |   |   |   |   percent C > 3: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent Q > 4.60251
+|   |   |   |   |   |   |   |   |   |   |   number sulphur <= 30
+|   |   |   |   |   |   |   |   |   |   |   |   percent C <= 2.55591: Hemostasis (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent C > 2.55591: Signal Transduction (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   number sulphur > 30: Disease (2.0/1.0)
+|   |   |   |   |   |   |   |   percent N > 4.42478
+|   |   |   |   |   |   |   |   |   theortical pI <= 5.76406: Immune System (4.0/1.0)
+|   |   |   |   |   |   |   |   |   theortical pI > 5.76406
+|   |   |   |   |   |   |   |   |   |   percent M <= 2.59209: Cell Cycle (5.0)
+|   |   |   |   |   |   |   |   |   |   percent M > 2.59209: Apoptosis (3.0/2.0)
+|   |   |   number nitrogen > 1083
+|   |   |   |   percent G <= 4.57627
+|   |   |   |   |   number nitrogen <= 2663
+|   |   |   |   |   |   percent N <= 3.74449
+|   |   |   |   |   |   |   number nitrogen <= 1688: Cell Cycle (3.0/1.0)
+|   |   |   |   |   |   |   number nitrogen > 1688: DNA Repair (2.0)
+|   |   |   |   |   |   percent N > 3.74449
+|   |   |   |   |   |   |   length <= 913
+|   |   |   |   |   |   |   |   percent C <= 1.52027: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   percent C > 1.52027
+|   |   |   |   |   |   |   |   |   percent R <= 3.99002: Binding and Uptake of Ligands by Scaveng (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent R > 3.99002: Membrane Trafficking (2.0)
+|   |   |   |   |   |   |   length > 913
+|   |   |   |   |   |   |   |   percent A <= 5.4843: Signal Transduction (4.0/1.0)
+|   |   |   |   |   |   |   |   percent A > 5.4843: Immune System (6.0/1.0)
+|   |   |   |   |   number nitrogen > 2663: Hemostasis (5.0/1.0)
+|   |   |   |   percent G > 4.57627
+|   |   |   |   |   percent C <= 2.65407
+|   |   |   |   |   |   percent W <= 1.00559
+|   |   |   |   |   |   |   percent S <= 9.4358
+|   |   |   |   |   |   |   |   percent M <= 2.21893
+|   |   |   |   |   |   |   |   |   number sulphur <= 35: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   number sulphur > 35
+|   |   |   |   |   |   |   |   |   |   percent Q <= 3.74532: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   percent Q > 3.74532: Extracellular matrix organization (12.0/1.0)
+|   |   |   |   |   |   |   |   percent M > 2.21893
+|   |   |   |   |   |   |   |   |   percent D <= 4.70958
+|   |   |   |   |   |   |   |   |   |   percent D <= 4.43623: Transmembrane transport of small molecul (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent D > 4.43623: Gene Expression (4.0/1.0)
+|   |   |   |   |   |   |   |   |   percent D > 4.70958
+|   |   |   |   |   |   |   |   |   |   length <= 869
+|   |   |   |   |   |   |   |   |   |   |   percent A <= 5.74018: Signal Transduction (2.0)
+|   |   |   |   |   |   |   |   |   |   |   percent A > 5.74018: Developmental Biology (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   length > 869
+|   |   |   |   |   |   |   |   |   |   |   percent N <= 3.75723: Metabolism (4.0)
+|   |   |   |   |   |   |   |   |   |   |   percent N > 3.75723
+|   |   |   |   |   |   |   |   |   |   |   |   percent M <= 2.58964: Hemostasis (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent M > 2.58964
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent L <= 10.4918: Developmental Biology (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent L > 10.4918: Immune System (3.0)
+|   |   |   |   |   |   |   percent S > 9.4358
+|   |   |   |   |   |   |   |   length <= 890: Cellular responses to stress (3.0/1.0)
+|   |   |   |   |   |   |   |   length > 890: Neuronal System (3.0/1.0)
+|   |   |   |   |   |   percent W > 1.00559
+|   |   |   |   |   |   |   percent E <= 7.25389
+|   |   |   |   |   |   |   |   percent C <= 1.11801
+|   |   |   |   |   |   |   |   |   percent W <= 2.48619
+|   |   |   |   |   |   |   |   |   |   percent A <= 6.32603: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent A > 6.32603: Metabolism (3.0/1.0)
+|   |   |   |   |   |   |   |   |   percent W > 2.48619: Metabolism of proteins (6.0/1.0)
+|   |   |   |   |   |   |   |   percent C > 1.11801
+|   |   |   |   |   |   |   |   |   percent M <= 1.68067
+|   |   |   |   |   |   |   |   |   |   percent R <= 6.49087
+|   |   |   |   |   |   |   |   |   |   |   percent E <= 5.98958: Extracellular matrix organization (3.0)
+|   |   |   |   |   |   |   |   |   |   |   percent E > 5.98958: Metabolism (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   percent R > 6.49087: Developmental Biology (4.0/1.0)
+|   |   |   |   |   |   |   |   |   percent M > 1.68067
+|   |   |   |   |   |   |   |   |   |   number sulphur <= 85
+|   |   |   |   |   |   |   |   |   |   |   percent D <= 6.22951
+|   |   |   |   |   |   |   |   |   |   |   |   percent S <= 6.72211
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P <= 5.53633: Transmembrane transport of small molecul (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent P > 5.53633: Disease (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   percent S > 6.72211
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 4.97238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.59327
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I <= 6.21212: Disease (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent I > 6.21212: Neuronal System (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 3.59327
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.58716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length <= 970: Neuronal System (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   length > 970: Transmembrane transport of small molecul (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.58716: Neuronal System (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   percent Q > 4.97238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D <= 4.37774: Developmental Biology (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   percent D > 4.37774: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   percent D > 6.22951: Disease (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   number sulphur > 85
+|   |   |   |   |   |   |   |   |   |   |   percent Q <= 3.74677: Developmental Biology (6.0)
+|   |   |   |   |   |   |   |   |   |   |   percent Q > 3.74677
+|   |   |   |   |   |   |   |   |   |   |   |   theortical pI <= 6.14798: Disease (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   theortical pI > 6.14798: Metabolism (4.0/1.0)
+|   |   |   |   |   |   |   percent E > 7.25389
+|   |   |   |   |   |   |   |   percent M <= 2.7027
+|   |   |   |   |   |   |   |   |   percent Q <= 4.41989
+|   |   |   |   |   |   |   |   |   |   theortical pI <= 6.46934: Transmembrane transport of small molecul (4.0)
+|   |   |   |   |   |   |   |   |   |   theortical pI > 6.46934: Hemostasis (2.0/1.0)
+|   |   |   |   |   |   |   |   |   percent Q > 4.41989
+|   |   |   |   |   |   |   |   |   |   theortical pI <= 5.77462: Chromatin organization (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   theortical pI > 5.77462: Immune System (3.0/1.0)
+|   |   |   |   |   |   |   |   percent M > 2.7027
+|   |   |   |   |   |   |   |   |   percent A <= 6.77362: Metabolism (2.0)
+|   |   |   |   |   |   |   |   |   percent A > 6.77362: Cell Cycle (3.0/2.0)
+|   |   |   |   |   percent C > 2.65407
+|   |   |   |   |   |   percent W <= 1.2963
+|   |   |   |   |   |   |   percent N <= 4.14079
+|   |   |   |   |   |   |   |   percent T <= 4.78723: Immune System (2.0)
+|   |   |   |   |   |   |   |   percent T > 4.78723
+|   |   |   |   |   |   |   |   |   number sulphur <= 58: Transmembrane transport of small molecul (2.0)
+|   |   |   |   |   |   |   |   |   number sulphur > 58: Metabolism (5.0/1.0)
+|   |   |   |   |   |   |   percent N > 4.14079
+|   |   |   |   |   |   |   |   percent Q <= 3.8806: Disease (2.0)
+|   |   |   |   |   |   |   |   percent Q > 3.8806: Apoptosis (2.0/1.0)
+|   |   |   |   |   |   percent W > 1.2963
+|   |   |   |   |   |   |   percent C <= 2.83505: Hemostasis (2.0)
+|   |   |   |   |   |   |   percent C > 2.83505
+|   |   |   |   |   |   |   |   percent D <= 5.34759
+|   |   |   |   |   |   |   |   |   percent A <= 4.64135: Immune System (3.0)
+|   |   |   |   |   |   |   |   |   percent A > 4.64135: Signal Transduction (9.0/1.0)
+|   |   |   |   |   |   |   |   percent D > 5.34759: Chromatin organization (2.0/1.0)
+
+Number of Leaves  : 	719
+
+Size of the tree : 	1437
+
+
+Time taken to build model: 1.58 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         857               28.2001 %
+Incorrectly Classified Instances      2182               71.7999 %
+Kappa statistic                          0.216 
+Mean absolute error                      0.0764
+Root mean squared error                  0.2564
+Relative absolute error                 79.3541 %
+Root relative squared error            116.8689 %
+Total Number of Instances             3039     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.096     0.023      0.068     0.096     0.08       0.549    Apoptosis
+                 0.764     0.01       0.75      0.764     0.757      0.883    Binding and Uptake of Ligands by Scaveng
+                 0.269     0.055      0.222     0.269     0.243      0.613    Cell Cycle
+                 0.234     0.019      0.211     0.234     0.222      0.617    Cell-Cell communication
+                 0.056     0.031      0.042     0.056     0.048      0.528    Cellular responses to stress
+                 0.306     0.012      0.288     0.306     0.297      0.653    Chromatin organization
+                 0.137     0.043      0.12      0.137     0.128      0.563    Developmental Biology
+                 0.169     0.102      0.157     0.169     0.163      0.545    Disease
+                 0.031     0.01       0.033     0.031     0.032      0.5      DNA Repair
+                 0.28      0.026      0.303     0.28      0.291      0.634    Extracellular matrix organization
+                 0.094     0.04       0.102     0.094     0.097      0.521    Gene Expression
+                 0.217     0.05       0.232     0.217     0.225      0.599    Hemostasis
+                 0.38      0.084      0.382     0.38      0.381      0.652    Immune System
+                 0         0.008      0         0         0          0.524    Membrane Trafficking
+                 0.364     0.128      0.379     0.364     0.371      0.63     Metabolism
+                 0.147     0.039      0.157     0.147     0.152      0.572    Metabolism of proteins
+                 0.268     0.029      0.308     0.268     0.287      0.64     Neuronal System
+                 0.357     0.055      0.393     0.357     0.374      0.664    Signal Transduction
+                 0.368     0.02       0.398     0.368     0.382      0.709    Transmembrane transport of small molecul
+Weighted Avg.    0.282     0.065      0.287     0.282     0.284      0.62 
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   <-- classified as
+   5   1   8   1   3   2   3   5   0   2   1   4   6   1   5   1   1   3   0 |   a = Apoptosis
+   0  84   1   0   4   0   0   2   0   1   2   1   7   0   4   0   0   3   1 |   b = Binding and Uptake of Ligands by Scaveng
+   6   1  45   2   8   4   6  17   2   2   5   9  13   5  23   5   1  11   2 |   c = Cell Cycle
+   3   1   2  15   1   2   6   4   1   2   3   5   8   1   5   2   0   3   0 |   d = Cell-Cell communication
+   4   0  10   3   4   0   7   6   1   2   4   4  11   1   6   1   2   3   2 |   e = Cellular responses to stress
+   2   0   6   1   4  15   4   2   0   0   3   1   3   0   2   3   1   2   0 |   f = Chromatin organization
+   3   2   9   5   6   2  17  14   3  12  12   5  10   0  11   5   1   6   1 |   g = Developmental Biology
+   8   2  13   8  13   6  13  52   4  13   8  19  32   2  57  26  10  16   6 |   h = Disease
+   2   0   3   0   1   1   1   3   1   1   0   3   3   0   5   1   2   3   2 |   i = DNA Repair
+   3   0   2   5   3   2  11  15   0  33   5   5   7   0  12   4   5   5   1 |   j = Extracellular matrix organization
+   7   6   8   5   6   2  13  15   2   4  13   8  15   2  17   6   4   5   1 |   k = Gene Expression
+   1   0  16   4   6   2   6  19   1   7   8  43  25   4  23   7   4  15   7 |   l = Hemostasis
+   5   5  24   7  10   1  17  42   2  10  14  17 139   2  31   7   6  22   5 |   m = Immune System
+   4   0   7   0   2   0   3   6   1   0   0   4   3   0   2   1   1   8   0 |   n = Membrane Trafficking
+   8   5  22   6  13   6  15  70   7   6  27  20  39   0 195  28  27  28  13 |   o = Metabolism
+   3   2   6   1   2   1   6  19   2   5  11   5  13   2  30  21   1  11   2 |   p = Metabolism of proteins
+   1   0   2   2   3   1   2  10   0   6   4  10   8   2  33   2  37   3  12 |   q = Neuronal System
+   7   3  18   6   6   5   7  24   3   2   7  12  19   1  32  10  12  99   4 |   r = Signal Transduction
+   1   0   1   0   1   0   5   6   0   1   1  10   3   1  22   4   5   6  39 |   s = Transmembrane transport of small molecul
+
